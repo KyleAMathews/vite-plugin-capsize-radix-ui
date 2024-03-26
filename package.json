@@ -1,0 +1,40 @@
+{
+  "name": "radix-capsize",
+  "version": "0.0.1",
+  "description": "Great Typography with Radix & Capsize",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typography",
+    "capsize",
+    "radix-ui"
+  ],
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.6",
+    "vitest": "^1.4.0"
+  },
+  "dependencies": {
+    "@capsizecss/core": "^4.1.0",
+    "@capsizecss/metrics": "^2.2.0",
+    "@capsizecss/unpack": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "mustache": "^4.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3"
+  }
+}
