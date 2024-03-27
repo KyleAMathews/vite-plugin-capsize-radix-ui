@@ -1,4 +1,4 @@
-# vite-plugin-capsize-radix-ui
+# vite-plugin-capsize-radix
 
 Generate bulletproof typography css for [@radix-ui/themes](https://www.radix-ui.com/)
 
@@ -24,7 +24,7 @@ if you're interested on collaborating on one.
 
 ### Install
 
-`npm install vite-plugin-capsize-radix-ui`
+`npm install vite-plugin-capsize-radix`
 
 ### Add to vite.config.ts
 
@@ -32,7 +32,7 @@ A sample React config:
 ```ts
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
-import { capsizeRadixPlugin } from "vite-plugin-capsize-radix-ui"
+import { capsizeRadixPlugin } from "vite-plugin-capsize-radix"
 import merriweather from "@capsizecss/metrics/merriweather"
 import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
 import arial from "@capsizecss/metrics/arial"

@@ -1,5 +1,5 @@
 {
-  "name": "radix-capsize",
+  "name": "vite-plugin-capsize-radix",
   "version": "0.0.1",
   "description": "Great Typography with Radix & Capsize",
   "main": "index.js",
@@ -9,10 +9,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "plugin.ts"
+  ],
+  "type": "module",
+  "types": "./plugin.ts",
+  "exports": {
+    ".": {
+      "types": "./plugin.ts",
+      "import": "./plugin.ts"
+    }
+  },
   "keywords": [
     "typography",
-    "capsize",
-    "radix-ui"
+    "capsizecss",
+    "radix-ui",
+    "vite-plugin"
   ],
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "license": "MIT",
