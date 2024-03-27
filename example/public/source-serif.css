@@ -14,9 +14,9 @@
   --font-size-4: 21.2121px;
   --line-height-4: 28px;
   --font-size-5: 27.2727px;
-  --line-height-5: 36px;
+  --line-height-5: 32px;
   --font-size-6: 36.3636px;
-  --line-height-6: 44px;
+  --line-height-6: 38px;
   --font-size-7: 45.4545px;
   --line-height-7: 42px;
   --font-size-8: 72.7273px;
@@ -163,35 +163,35 @@
 
 .rt-r-size-5:not(.rt-DialogContent) {
   font-size: 27.2727px;
-  line-height: 36px;
+  line-height: 32px;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.312em;
+  margin-bottom: -0.2387em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.348em;
+  margin-top: -0.2747em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent) {
   font-size: 36.3636px;
-  line-height: 44px;
+  line-height: 38px;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.257em;
+  margin-bottom: -0.1745em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.293em;
+  margin-top: -0.2105em;
   display: table;
 }
 

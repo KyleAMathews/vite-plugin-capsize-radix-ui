@@ -9,7 +9,6 @@ import caveatBrush from "@capsizecss/metrics/caveatBrush"
 import sourceSerif from "@capsizecss/metrics/sourceSerif4"
 import sourcesSans from "@capsizecss/metrics/sourceSans3"
 import crimsonText from "@capsizecss/metrics/crimsonText"
-import crimsonPro from "@capsizecss/metrics/crimsonPro"
 import rosario from "@capsizecss/metrics/rosario"
 import montserrat from "@capsizecss/metrics/montserrat"
 import arvo from "@capsizecss/metrics/arvo"
@@ -43,6 +42,8 @@ export default defineConfig({
     radixCapsizePlugin({
       outputPath: `./public/josefin-typography.css`,
       defaultFontStack: [josefin, arial],
+      fontSizes: [8, 8, 10, 12, 14, 18, 24, 30, 48, 60],
+      lineHeights: [18, 18, 21, 23, 28, 32, 38, 42, 52, 60],
     }),
     radixCapsizePlugin({
       outputPath: `./public/caveat-brush-typography.css`,
@@ -86,6 +87,9 @@ export default defineConfig({
       outputPath: `./public/ptsans.css`,
       defaultFontStack: [pTSans, arial],
       headingFontStack: [oswald, arial],
+    }),
+    radixCapsizePlugin({
+      outputPath: `./public/system.css`,
     }),
   ],
 })

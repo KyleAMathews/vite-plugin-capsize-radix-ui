@@ -78,8 +78,13 @@ function TypographyShowcase() {
     <Flex
       direction="column"
       gap="6"
-      mt="8"
-      style={{ width: 660, marginLeft: `auto`, marginRight: `auto` }}
+      mt="6"
+      style={{
+        width: `100%`,
+        maxWidth: 660,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+      }}
     >
       <Heading>
         vite-plugin-capsize-radix-ui <FaGithub style={{ height: 24 }} />
@@ -91,6 +96,7 @@ function TypographyShowcase() {
         </Text>
         <ThemeSelector
           themes={[
+            { name: `System`, file: `/system.css` },
             { name: `Inter`, file: `/inter-typography.css` },
             {
               name: `Work Sans/Quattrocento Sans`,
@@ -117,9 +123,8 @@ function TypographyShowcase() {
         {` `}
         <Em>italic</Em>, or{` `}
         <Strong>
-          <Em>both</Em>
+          <Em>both.</Em>
         </Strong>
-        .
       </Text>
 
       <Heading as="h2" size="5">
