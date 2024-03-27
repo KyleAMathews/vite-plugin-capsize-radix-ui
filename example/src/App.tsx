@@ -93,7 +93,7 @@ function TypographyShowcase() {
           style={{ color: `inherit` }}
           href="https://github.com/kyleamathews/vite-plugin-capsize-radix-ui/"
         >
-          <FaGithub style={{ height: 18 }} />
+          <FaGithub style={{ height: 18, width: 18 }} />
         </a>
       </Heading>
       <Text as="p">
