@@ -100,6 +100,7 @@ function TypographyShowcase() {
         Generate bulletproof typography css for{` `}
         <Link href="https://www.radix-ui.com/">@radix-ui/themes</Link>
       </Text>
+      <Text as="p">Makes changing fonts as easy as changing colors.</Text>
       <Flex direction="column" gap="2">
         <Text as="label">
           <Em>Pick font(s)</Em>
