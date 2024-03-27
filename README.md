@@ -70,12 +70,12 @@ the [Cumulative Layout Shift](https://web.dev/cls/) metric for sites that depend
 
 ### Custom fonts
 
-Capsize has precalculatd metrics for system and many open source fonts. If you're
+Capsize has precalculated metrics for system and many open source fonts. If you're
 using a custom font, you can calculate the font metrics using their [@capsizecss/unpack](https://github.com/seek-oss/capsize?tab=readme-ov-file#unpack) package.
 
 ## Responsive styles
 This plugin automatically generates responsive styles. Typically you want your mobile font-size
-to be slightly smaller than on desktop. We do that by shifting the text one size smaller on mobile.
+to be slightly smaller than on desktop. We do that by shifting the text a size smaller on mobile.
 
 ## Parameters:
 
