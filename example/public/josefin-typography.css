@@ -5,26 +5,48 @@
   --em-font-family: "Josefin Sans", "Josefin Sans Fallback", Arial;
   --quote-font-family: "Josefin Sans", "Josefin Sans Fallback", Arial;
   --heading-font-family: "Josefin Sans", "Josefin Sans Fallback", Arial;
-  --font-size-1: 11.396px;
-  --line-height-1: 18px;
-  --font-size-2: 11.396px;
-  --line-height-2: 18px;
-  --font-size-3: 14.245px;
-  --line-height-3: 21px;
-  --font-size-4: 17.094px;
-  --line-height-4: 23px;
-  --font-size-5: 19.943px;
-  --line-height-5: 28px;
-  --font-size-6: 25.641px;
-  --line-height-6: 32px;
-  --font-size-7: 34.188px;
-  --line-height-7: 38px;
-  --font-size-8: 42.735px;
-  --line-height-8: 42px;
-  --font-size-9: 68.3761px;
-  --line-height-9: 52px;
-  --font-size-10: 85.4701px;
-  --line-height-10: 60px;
+  /* Mobile */
+    --font-size-1: 12.8205px;
+    --line-height-1: normal;
+    --font-size-2: 12.8205px;
+    --line-height-2: 21px;
+    --font-size-3: 15.6695px;
+    --line-height-3: 24px;
+    --font-size-4: 17.094px;
+    --line-height-4: 26px;
+    --font-size-5: 19.943px;
+    --line-height-5: 27px;
+    --font-size-6: 25.641px;
+    --line-height-6: 29px;
+    --font-size-7: 34.188px;
+    --line-height-7: 36px;
+    --font-size-8: 51.2821px;
+    --line-height-8: 44px;
+    --font-size-9: 68.3761px;
+    --line-height-9: 52px;
+    --font-size-10: 91.1681px;
+    --line-height-10: 64px;
+  /* Larger devices */
+  @media (min-width: 768px) {
+    --font-size-1: 12.8205px;
+    --line-height-1: 21px;
+    --font-size-2: 15.6695px;
+    --line-height-2: 24px;
+    --font-size-3: 17.094px;
+    --line-height-3: 26px;
+    --font-size-4: 19.943px;
+    --line-height-4: 27px;
+    --font-size-5: 25.641px;
+    --line-height-5: 29px;
+    --font-size-6: 34.188px;
+    --line-height-6: 36px;
+    --font-size-7: 51.2821px;
+    --line-height-7: 44px;
+    --font-size-8: 68.3761px;
+    --line-height-8: 52px;
+    --font-size-9: 91.1681px;
+    --line-height-9: 64px;
+  }
 }
 
 /* Otherwise gets doesn't sit inline */
@@ -35,58 +57,115 @@
 /* Default text styles */
 
 .rt-Text {
-  font-size: 14.245px;
-  line-height: 21px;
+  font-size: 15.6695px;
+  line-height: 24px;
 }
 
 .rt-Text::before {
   content: "";
-  margin-bottom: -0.2851em;
+  margin-bottom: -0.3138em;
   display: table;
 }
 
 .rt-Text::after {
   content: "";
-  margin-top: -0.4871em;
+  margin-top: -0.5158em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Text {
+  font-size: 17.094px;
+  line-height: 26px;
+}
+
+.rt-Text::before {
+  content: "";
+  margin-bottom: -0.3085em;
+  display: table;
+}
+
+.rt-Text::after {
+  content: "";
+  margin-top: -0.5105em;
+  display: table;
+}
 }
 
 /* Em text styles */
 
 .rt-Em {
-  font-size: 14.245px;
-  line-height: 21px;
+  font-size: 15.6695px;
+  line-height: 24px;
 }
 
 .rt-Em::before {
   content: "";
-  margin-bottom: -0.2851em;
+  margin-bottom: -0.3138em;
   display: table;
 }
 
 .rt-Em::after {
   content: "";
-  margin-top: -0.4871em;
+  margin-top: -0.5158em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Em {
+  font-size: 17.094px;
+  line-height: 26px;
+}
+
+.rt-Em::before {
+  content: "";
+  margin-bottom: -0.3085em;
+  display: table;
+}
+
+.rt-Em::after {
+  content: "";
+  margin-top: -0.5105em;
+  display: table;
+}
 }
 
 /* Quote text styles */
 
 .rt-Quote {
-  font-size: 14.245px;
-  line-height: 21px;
+  font-size: 15.6695px;
+  line-height: 24px;
 }
 
 .rt-Quote::before {
   content: "";
-  margin-bottom: -0.2851em;
+  margin-bottom: -0.3138em;
   display: table;
 }
 
 .rt-Quote::after {
   content: "";
-  margin-top: -0.4871em;
+  margin-top: -0.5158em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Quote {
+  font-size: 17.094px;
+  line-height: 26px;
+}
+
+.rt-Quote::before {
+  content: "";
+  margin-bottom: -0.3085em;
+  display: table;
+}
+
+.rt-Quote::after {
+  content: "";
+  margin-top: -0.5105em;
+  display: table;
+}
 }
 
 .rt-Em, .rt-Quote {
@@ -96,138 +175,138 @@
 /* Class names for text elements */
 
 .rt-r-size-1:not(.rt-DialogContent) {
-  font-size: 11.396px;
-  line-height: 18px;
+  font-size: 12.8205px;
+  line-height: normal;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3377em;
+  margin-bottom: -0.048em;
   display: table;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.5397em;
+  margin-top: -0.25em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent) {
-  font-size: 11.396px;
-  line-height: 18px;
+  font-size: 12.8205px;
+  line-height: 21px;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3377em;
+  margin-bottom: -0.367em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.5397em;
+  margin-top: -0.569em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent) {
-  font-size: 14.245px;
-  line-height: 21px;
+  font-size: 15.6695px;
+  line-height: 24px;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.2851em;
+  margin-bottom: -0.3138em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.4871em;
+  margin-top: -0.5158em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent) {
   font-size: 17.094px;
-  line-height: 23px;
+  line-height: 26px;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.2208em;
+  margin-bottom: -0.3085em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.4228em;
+  margin-top: -0.5105em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent) {
   font-size: 19.943px;
-  line-height: 28px;
+  line-height: 27px;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.25em;
+  margin-bottom: -0.2249em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.452em;
+  margin-top: -0.4269em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent) {
   font-size: 25.641px;
-  line-height: 32px;
+  line-height: 29px;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.172em;
+  margin-bottom: -0.1135em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.374em;
+  margin-top: -0.3155em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent) {
   font-size: 34.188px;
-  line-height: 38px;
+  line-height: 36px;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.1038em;
+  margin-bottom: -0.0745em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3058em;
+  margin-top: -0.2765em;
   display: table;
 }
 
 .rt-r-size-8:not(.rt-DialogContent) {
-  font-size: 42.735px;
-  line-height: 42px;
+  font-size: 51.2821px;
+  line-height: 44px;
 }
 
 .rt-r-size-8:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.0394em;
+  margin-bottom: 0.023em;
   display: table;
 }
 
 .rt-r-size-8:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.2414em;
+  margin-top: -0.179em;
   display: table;
 }
 
@@ -249,8 +328,8 @@
 }
 
 .rt-r-size-10:not(.rt-DialogContent) {
-  font-size: 85.4701px;
-  line-height: 60px;
+  font-size: 91.1681px;
+  line-height: 64px;
 }
 
 .rt-r-size-10:not(.rt-DialogContent)::before {
@@ -263,4 +342,159 @@
   content: "";
   margin-top: -0.101em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-r-size-1:not(.rt-DialogContent) {
+  font-size: 12.8205px;
+  line-height: 21px;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.367em;
+  display: table;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.569em;
+  display: table;
+}
+  
+.rt-r-size-2:not(.rt-DialogContent) {
+  font-size: 15.6695px;
+  line-height: 24px;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.3138em;
+  display: table;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.5158em;
+  display: table;
+}
+  
+.rt-r-size-3:not(.rt-DialogContent) {
+  font-size: 17.094px;
+  line-height: 26px;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.3085em;
+  display: table;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.5105em;
+  display: table;
+}
+  
+.rt-r-size-4:not(.rt-DialogContent) {
+  font-size: 19.943px;
+  line-height: 27px;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.2249em;
+  display: table;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.4269em;
+  display: table;
+}
+  
+.rt-r-size-5:not(.rt-DialogContent) {
+  font-size: 25.641px;
+  line-height: 29px;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.1135em;
+  display: table;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.3155em;
+  display: table;
+}
+  
+.rt-r-size-6:not(.rt-DialogContent) {
+  font-size: 34.188px;
+  line-height: 36px;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0745em;
+  display: table;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.2765em;
+  display: table;
+}
+  
+.rt-r-size-7:not(.rt-DialogContent) {
+  font-size: 51.2821px;
+  line-height: 44px;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: 0.023em;
+  display: table;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.179em;
+  display: table;
+}
+  
+.rt-r-size-8:not(.rt-DialogContent) {
+  font-size: 68.3761px;
+  line-height: 52px;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: 0.0717em;
+  display: table;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.1303em;
+  display: table;
+}
+  
+.rt-r-size-9:not(.rt-DialogContent) {
+  font-size: 91.1681px;
+  line-height: 64px;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: 0.101em;
+  display: table;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.101em;
+  display: table;
+}
 }

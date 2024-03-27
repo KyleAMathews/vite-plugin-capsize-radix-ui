@@ -22,6 +22,8 @@ import libreBaskerville from "@capsizecss/metrics/libreBaskerville"
 import lato from "@capsizecss/metrics/lato"
 import oswald from "@capsizecss/metrics/oswald"
 import pTSans from "@capsizecss/metrics/pTSans"
+import merriweather from "@capsizecss/metrics/merriweather"
+import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
 
 // For variable fonts, we need to modify the familyName
 // workSans.familyName = `Work Sans Variable`
@@ -42,8 +44,6 @@ export default defineConfig({
     radixCapsizePlugin({
       outputPath: `./public/josefin-typography.css`,
       defaultFontStack: [josefin, arial],
-      fontSizes: [8, 8, 10, 12, 14, 18, 24, 30, 48, 60],
-      lineHeights: [18, 18, 21, 23, 28, 32, 38, 42, 52, 60],
     }),
     radixCapsizePlugin({
       outputPath: `./public/caveat-brush-typography.css`,
@@ -87,6 +87,11 @@ export default defineConfig({
       outputPath: `./public/ptsans.css`,
       defaultFontStack: [pTSans, arial],
       headingFontStack: [oswald, arial],
+    }),
+    radixCapsizePlugin({
+      outputPath: `./public/merriweather.css`,
+      defaultFontStack: [merriweather, arial],
+      headingFontStack: [merriweatherSans, arial],
     }),
     radixCapsizePlugin({
       outputPath: `./public/system.css`,

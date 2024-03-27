@@ -5,24 +5,48 @@
   --em-font-family: Alegreya, "Alegreya Fallback", Arial;
   --quote-font-family: Alegreya, "Alegreya Fallback", Arial;
   --heading-font-family: "Alegreya Sans", "Alegreya Sans Fallback", Arial;
-  --font-size-1: 12.5589px;
-  --line-height-1: 18px;
-  --font-size-2: 15.6986px;
-  --line-height-2: 23px;
-  --font-size-3: 18.8383px;
-  --line-height-3: 25px;
-  --font-size-4: 21.978px;
-  --line-height-4: 28px;
-  --font-size-5: 28.2575px;
-  --line-height-5: 32px;
-  --font-size-6: 37.6766px;
-  --line-height-6: 38px;
-  --font-size-7: 47.0958px;
-  --line-height-7: 42px;
-  --font-size-8: 75.3532px;
-  --line-height-8: 52px;
-  --font-size-9: 94.1915px;
-  --line-height-9: 60px;
+  /* Mobile */
+    --font-size-1: 14.1287px;
+    --line-height-1: normal;
+    --font-size-2: 14.1287px;
+    --line-height-2: 21px;
+    --font-size-3: 17.2684px;
+    --line-height-3: 24px;
+    --font-size-4: 18.8383px;
+    --line-height-4: 26px;
+    --font-size-5: 21.978px;
+    --line-height-5: 27px;
+    --font-size-6: 28.2575px;
+    --line-height-6: 29px;
+    --font-size-7: 37.6766px;
+    --line-height-7: 36px;
+    --font-size-8: 56.5149px;
+    --line-height-8: 44px;
+    --font-size-9: 75.3532px;
+    --line-height-9: 52px;
+    --font-size-10: 100.471px;
+    --line-height-10: 64px;
+  /* Larger devices */
+  @media (min-width: 768px) {
+    --font-size-1: 14.1287px;
+    --line-height-1: 21px;
+    --font-size-2: 17.2684px;
+    --line-height-2: 24px;
+    --font-size-3: 18.8383px;
+    --line-height-3: 26px;
+    --font-size-4: 21.978px;
+    --line-height-4: 27px;
+    --font-size-5: 28.2575px;
+    --line-height-5: 29px;
+    --font-size-6: 37.6766px;
+    --line-height-6: 36px;
+    --font-size-7: 56.5149px;
+    --line-height-7: 44px;
+    --font-size-8: 75.3532px;
+    --line-height-8: 52px;
+    --font-size-9: 100.471px;
+    --line-height-9: 64px;
+  }
 }
 
 /* Otherwise gets doesn't sit inline */
@@ -33,58 +57,115 @@
 /* Default text styles */
 
 .rt-Text {
-  font-size: 18.8383px;
-  line-height: 25px;
+  font-size: 17.2684px;
+  line-height: 24px;
 }
 
 .rt-Text::before {
   content: "";
-  margin-bottom: -0.362em;
+  margin-bottom: -0.3934em;
   display: table;
 }
 
 .rt-Text::after {
   content: "";
-  margin-top: -0.328em;
+  margin-top: -0.3594em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Text {
+  font-size: 18.8383px;
+  line-height: 26px;
+}
+
+.rt-Text::before {
+  content: "";
+  margin-bottom: -0.3886em;
+  display: table;
+}
+
+.rt-Text::after {
+  content: "";
+  margin-top: -0.3546em;
+  display: table;
+}
 }
 
 /* Em text styles */
 
 .rt-Em {
-  font-size: 18.8383px;
-  line-height: 25px;
+  font-size: 17.2684px;
+  line-height: 24px;
 }
 
 .rt-Em::before {
   content: "";
-  margin-bottom: -0.362em;
+  margin-bottom: -0.3934em;
   display: table;
 }
 
 .rt-Em::after {
   content: "";
-  margin-top: -0.328em;
+  margin-top: -0.3594em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Em {
+  font-size: 18.8383px;
+  line-height: 26px;
+}
+
+.rt-Em::before {
+  content: "";
+  margin-bottom: -0.3886em;
+  display: table;
+}
+
+.rt-Em::after {
+  content: "";
+  margin-top: -0.3546em;
+  display: table;
+}
 }
 
 /* Quote text styles */
 
 .rt-Quote {
-  font-size: 18.8383px;
-  line-height: 25px;
+  font-size: 17.2684px;
+  line-height: 24px;
 }
 
 .rt-Quote::before {
   content: "";
-  margin-bottom: -0.362em;
+  margin-bottom: -0.3934em;
   display: table;
 }
 
 .rt-Quote::after {
   content: "";
-  margin-top: -0.328em;
+  margin-top: -0.3594em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Quote {
+  font-size: 18.8383px;
+  line-height: 26px;
+}
+
+.rt-Quote::before {
+  content: "";
+  margin-bottom: -0.3886em;
+  display: table;
+}
+
+.rt-Quote::after {
+  content: "";
+  margin-top: -0.3546em;
+  display: table;
+}
 }
 
 .rt-Em, .rt-Quote {
@@ -94,124 +175,295 @@
 /* Class names for text elements */
 
 .rt-r-size-1:not(.rt-DialogContent) {
-  font-size: 12.5589px;
-  line-height: 18px;
+  font-size: 14.1287px;
+  line-height: normal;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.4151em;
+  margin-bottom: -0.379em;
   display: table;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3811em;
+  margin-top: -0.345em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent) {
-  font-size: 15.6986px;
-  line-height: 23px;
+  font-size: 14.1287px;
+  line-height: 21px;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.431em;
+  margin-bottom: -0.4417em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.397em;
+  margin-top: -0.4077em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent) {
-  font-size: 18.8383px;
-  line-height: 25px;
+  font-size: 17.2684px;
+  line-height: 24px;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.362em;
+  margin-bottom: -0.3934em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.328em;
+  margin-top: -0.3594em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent) {
-  font-size: 21.978px;
-  line-height: 28px;
+  font-size: 18.8383px;
+  line-height: 26px;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3355em;
+  margin-bottom: -0.3886em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3015em;
+  margin-top: -0.3546em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent) {
-  font-size: 28.2575px;
-  line-height: 32px;
+  font-size: 21.978px;
+  line-height: 27px;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.2647em;
+  margin-bottom: -0.3127em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.2307em;
+  margin-top: -0.2787em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent) {
-  font-size: 37.6766px;
-  line-height: 38px;
+  font-size: 28.2575px;
+  line-height: 29px;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.2028em;
+  margin-bottom: -0.2116em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.1688em;
+  margin-top: -0.1776em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent) {
-  font-size: 47.0958px;
-  line-height: 42px;
+  font-size: 37.6766px;
+  line-height: 36px;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.1444em;
+  margin-bottom: -0.1763em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.1104em;
+  margin-top: -0.1422em;
   display: table;
 }
 
+.rt-r-size-8:not(.rt-DialogContent) {
+  font-size: 56.5149px;
+  line-height: 44px;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0878em;
+  display: table;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.0538em;
+  display: table;
+}
+
+.rt-r-size-9:not(.rt-DialogContent) {
+  font-size: 75.3532px;
+  line-height: 52px;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0435em;
+  display: table;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.0095em;
+  display: table;
+}
+
+.rt-r-size-10:not(.rt-DialogContent) {
+  font-size: 100.471px;
+  line-height: 64px;
+}
+
+.rt-r-size-10:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.017em;
+  display: table;
+}
+
+.rt-r-size-10:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: 0.017em;
+  display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-r-size-1:not(.rt-DialogContent) {
+  font-size: 14.1287px;
+  line-height: 21px;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.4417em;
+  display: table;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.4077em;
+  display: table;
+}
+  
+.rt-r-size-2:not(.rt-DialogContent) {
+  font-size: 17.2684px;
+  line-height: 24px;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.3934em;
+  display: table;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.3594em;
+  display: table;
+}
+  
+.rt-r-size-3:not(.rt-DialogContent) {
+  font-size: 18.8383px;
+  line-height: 26px;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.3886em;
+  display: table;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.3546em;
+  display: table;
+}
+  
+.rt-r-size-4:not(.rt-DialogContent) {
+  font-size: 21.978px;
+  line-height: 27px;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.3127em;
+  display: table;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.2787em;
+  display: table;
+}
+  
+.rt-r-size-5:not(.rt-DialogContent) {
+  font-size: 28.2575px;
+  line-height: 29px;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.2116em;
+  display: table;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.1776em;
+  display: table;
+}
+  
+.rt-r-size-6:not(.rt-DialogContent) {
+  font-size: 37.6766px;
+  line-height: 36px;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.1763em;
+  display: table;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.1422em;
+  display: table;
+}
+  
+.rt-r-size-7:not(.rt-DialogContent) {
+  font-size: 56.5149px;
+  line-height: 44px;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0878em;
+  display: table;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.0538em;
+  display: table;
+}
+  
 .rt-r-size-8:not(.rt-DialogContent) {
   font-size: 75.3532px;
   line-height: 52px;
@@ -228,10 +480,10 @@
   margin-top: -0.0095em;
   display: table;
 }
-
+  
 .rt-r-size-9:not(.rt-DialogContent) {
-  font-size: 94.1915px;
-  line-height: 60px;
+  font-size: 100.471px;
+  line-height: 64px;
 }
 
 .rt-r-size-9:not(.rt-DialogContent)::before {
@@ -244,4 +496,5 @@
   content: "";
   margin-top: 0.017em;
   display: table;
+}
 }

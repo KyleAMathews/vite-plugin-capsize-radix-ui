@@ -5,24 +5,48 @@
   --em-font-family: "Quattrocento Sans", "Quattrocento Sans Fallback", Arial;
   --quote-font-family: "Quattrocento Sans", "Quattrocento Sans Fallback", Arial;
   --heading-font-family: "Work Sans", "Work Sans Fallback", Arial;
-  --font-size-1: 12.1212px;
-  --line-height-1: 18px;
-  --font-size-2: 15.1515px;
-  --line-height-2: 23px;
-  --font-size-3: 18.1818px;
-  --line-height-3: 25px;
-  --font-size-4: 21.2121px;
-  --line-height-4: 28px;
-  --font-size-5: 27.2727px;
-  --line-height-5: 32px;
-  --font-size-6: 36.3636px;
-  --line-height-6: 38px;
-  --font-size-7: 45.4545px;
-  --line-height-7: 42px;
-  --font-size-8: 72.7273px;
-  --line-height-8: 52px;
-  --font-size-9: 90.9091px;
-  --line-height-9: 60px;
+  /* Mobile */
+    --font-size-1: 13.6364px;
+    --line-height-1: normal;
+    --font-size-2: 13.6364px;
+    --line-height-2: 21px;
+    --font-size-3: 16.6667px;
+    --line-height-3: 24px;
+    --font-size-4: 18.1818px;
+    --line-height-4: 26px;
+    --font-size-5: 21.2121px;
+    --line-height-5: 27px;
+    --font-size-6: 27.2727px;
+    --line-height-6: 29px;
+    --font-size-7: 36.3636px;
+    --line-height-7: 36px;
+    --font-size-8: 54.5455px;
+    --line-height-8: 44px;
+    --font-size-9: 72.7273px;
+    --line-height-9: 52px;
+    --font-size-10: 96.9697px;
+    --line-height-10: 64px;
+  /* Larger devices */
+  @media (min-width: 768px) {
+    --font-size-1: 13.6364px;
+    --line-height-1: 21px;
+    --font-size-2: 16.6667px;
+    --line-height-2: 24px;
+    --font-size-3: 18.1818px;
+    --line-height-3: 26px;
+    --font-size-4: 21.2121px;
+    --line-height-4: 27px;
+    --font-size-5: 27.2727px;
+    --line-height-5: 29px;
+    --font-size-6: 36.3636px;
+    --line-height-6: 36px;
+    --font-size-7: 54.5455px;
+    --line-height-7: 44px;
+    --font-size-8: 72.7273px;
+    --line-height-8: 52px;
+    --font-size-9: 96.9697px;
+    --line-height-9: 64px;
+  }
 }
 
 /* Otherwise gets doesn't sit inline */
@@ -33,58 +57,115 @@
 /* Default text styles */
 
 .rt-Text {
-  font-size: 18.1818px;
-  line-height: 25px;
+  font-size: 16.6667px;
+  line-height: 24px;
 }
 
 .rt-Text::before {
   content: "";
-  margin-bottom: -0.3215em;
+  margin-bottom: -0.354em;
   display: table;
 }
 
 .rt-Text::after {
   content: "";
-  margin-top: -0.3935em;
+  margin-top: -0.426em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Text {
+  font-size: 18.1818px;
+  line-height: 26px;
+}
+
+.rt-Text::before {
+  content: "";
+  margin-bottom: -0.349em;
+  display: table;
+}
+
+.rt-Text::after {
+  content: "";
+  margin-top: -0.421em;
+  display: table;
+}
 }
 
 /* Em text styles */
 
 .rt-Em {
-  font-size: 18.1818px;
-  line-height: 25px;
+  font-size: 16.6667px;
+  line-height: 24px;
 }
 
 .rt-Em::before {
   content: "";
-  margin-bottom: -0.3215em;
+  margin-bottom: -0.354em;
   display: table;
 }
 
 .rt-Em::after {
   content: "";
-  margin-top: -0.3935em;
+  margin-top: -0.426em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Em {
+  font-size: 18.1818px;
+  line-height: 26px;
+}
+
+.rt-Em::before {
+  content: "";
+  margin-bottom: -0.349em;
+  display: table;
+}
+
+.rt-Em::after {
+  content: "";
+  margin-top: -0.421em;
+  display: table;
+}
 }
 
 /* Quote text styles */
 
 .rt-Quote {
-  font-size: 18.1818px;
-  line-height: 25px;
+  font-size: 16.6667px;
+  line-height: 24px;
 }
 
 .rt-Quote::before {
   content: "";
-  margin-bottom: -0.3215em;
+  margin-bottom: -0.354em;
   display: table;
 }
 
 .rt-Quote::after {
   content: "";
-  margin-top: -0.3935em;
+  margin-top: -0.426em;
   display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-Quote {
+  font-size: 18.1818px;
+  line-height: 26px;
+}
+
+.rt-Quote::before {
+  content: "";
+  margin-bottom: -0.349em;
+  display: table;
+}
+
+.rt-Quote::after {
+  content: "";
+  margin-top: -0.421em;
+  display: table;
+}
 }
 
 .rt-Em, .rt-Quote {
@@ -94,124 +175,295 @@
 /* Class names for text elements */
 
 .rt-r-size-1:not(.rt-DialogContent) {
-  font-size: 12.1212px;
-  line-height: 18px;
+  font-size: 13.6364px;
+  line-height: normal;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3765em;
+  margin-bottom: -0.188em;
   display: table;
 }
 
 .rt-r-size-1:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.4485em;
+  margin-top: -0.26em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent) {
-  font-size: 15.1515px;
-  line-height: 23px;
+  font-size: 13.6364px;
+  line-height: 21px;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.393em;
+  margin-bottom: -0.404em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.465em;
+  margin-top: -0.476em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent) {
-  font-size: 18.1818px;
-  line-height: 25px;
+  font-size: 16.6667px;
+  line-height: 24px;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3215em;
+  margin-bottom: -0.354em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3935em;
+  margin-top: -0.426em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent) {
-  font-size: 21.2121px;
-  line-height: 28px;
+  font-size: 18.1818px;
+  line-height: 26px;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.294em;
+  margin-bottom: -0.349em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.366em;
+  margin-top: -0.421em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent) {
-  font-size: 27.2727px;
-  line-height: 32px;
+  font-size: 21.2121px;
+  line-height: 27px;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.2207em;
+  margin-bottom: -0.2704em;
   display: table;
 }
 
 .rt-r-size-5:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.2927em;
+  margin-top: -0.3424em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent) {
-  font-size: 36.3636px;
-  line-height: 38px;
+  font-size: 27.2727px;
+  line-height: 29px;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.1565em;
+  margin-bottom: -0.1657em;
   display: table;
 }
 
 .rt-r-size-6:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.2285em;
+  margin-top: -0.2377em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent) {
-  font-size: 45.4545px;
-  line-height: 42px;
+  font-size: 36.3636px;
+  line-height: 36px;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.096em;
+  margin-bottom: -0.129em;
   display: table;
 }
 
 .rt-r-size-7:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.168em;
+  margin-top: -0.201em;
   display: table;
 }
 
+.rt-r-size-8:not(.rt-DialogContent) {
+  font-size: 54.5455px;
+  line-height: 44px;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0373em;
+  display: table;
+}
+
+.rt-r-size-8:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.1093em;
+  display: table;
+}
+
+.rt-r-size-9:not(.rt-DialogContent) {
+  font-size: 72.7273px;
+  line-height: 52px;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: 0.0085em;
+  display: table;
+}
+
+.rt-r-size-9:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.0635em;
+  display: table;
+}
+
+.rt-r-size-10:not(.rt-DialogContent) {
+  font-size: 96.9697px;
+  line-height: 64px;
+}
+
+.rt-r-size-10:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: 0.036em;
+  display: table;
+}
+
+.rt-r-size-10:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.036em;
+  display: table;
+}
+@media (min-width: 768px) {
+  
+.rt-r-size-1:not(.rt-DialogContent) {
+  font-size: 13.6364px;
+  line-height: 21px;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.404em;
+  display: table;
+}
+
+.rt-r-size-1:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.476em;
+  display: table;
+}
+  
+.rt-r-size-2:not(.rt-DialogContent) {
+  font-size: 16.6667px;
+  line-height: 24px;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.354em;
+  display: table;
+}
+
+.rt-r-size-2:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.426em;
+  display: table;
+}
+  
+.rt-r-size-3:not(.rt-DialogContent) {
+  font-size: 18.1818px;
+  line-height: 26px;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.349em;
+  display: table;
+}
+
+.rt-r-size-3:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.421em;
+  display: table;
+}
+  
+.rt-r-size-4:not(.rt-DialogContent) {
+  font-size: 21.2121px;
+  line-height: 27px;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.2704em;
+  display: table;
+}
+
+.rt-r-size-4:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.3424em;
+  display: table;
+}
+  
+.rt-r-size-5:not(.rt-DialogContent) {
+  font-size: 27.2727px;
+  line-height: 29px;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.1657em;
+  display: table;
+}
+
+.rt-r-size-5:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.2377em;
+  display: table;
+}
+  
+.rt-r-size-6:not(.rt-DialogContent) {
+  font-size: 36.3636px;
+  line-height: 36px;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.129em;
+  display: table;
+}
+
+.rt-r-size-6:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.201em;
+  display: table;
+}
+  
+.rt-r-size-7:not(.rt-DialogContent) {
+  font-size: 54.5455px;
+  line-height: 44px;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::before {
+  content: "";
+  margin-bottom: -0.0373em;
+  display: table;
+}
+
+.rt-r-size-7:not(.rt-DialogContent)::after {
+  content: "";
+  margin-top: -0.1093em;
+  display: table;
+}
+  
 .rt-r-size-8:not(.rt-DialogContent) {
   font-size: 72.7273px;
   line-height: 52px;
@@ -228,10 +480,10 @@
   margin-top: -0.0635em;
   display: table;
 }
-
+  
 .rt-r-size-9:not(.rt-DialogContent) {
-  font-size: 90.9091px;
-  line-height: 60px;
+  font-size: 96.9697px;
+  line-height: 64px;
 }
 
 .rt-r-size-9:not(.rt-DialogContent)::before {
@@ -244,4 +496,5 @@
   content: "";
   margin-top: -0.036em;
   display: table;
+}
 }

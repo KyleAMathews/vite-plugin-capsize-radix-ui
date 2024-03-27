@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.tsx"
 import "@radix-ui/themes/styles.css"
-// import "./inter-typography.css"
+import "./App.css"
 import { Theme } from "@radix-ui/themes"
 import "@fontsource/inter/latin.css"
 import "@fontsource/work-sans/latin.css"
@@ -24,10 +24,12 @@ import "@fontsource/raleway/latin.css"
 import "@fontsource/lato/latin.css"
 import "@fontsource/pt-sans/latin.css"
 import "@fontsource/oswald/latin.css"
+import "@fontsource/merriweather/latin.css"
+import "@fontsource/merriweather-sans/latin.css"
 
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
   <React.StrictMode>
-    <Theme>
+    <Theme accentColor="indigo">
       <App />
     </Theme>
   </React.StrictMode>

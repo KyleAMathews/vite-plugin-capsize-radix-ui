@@ -77,8 +77,9 @@ function TypographyShowcase() {
   return (
     <Flex
       direction="column"
-      gap="6"
-      mt="6"
+      gap="5"
+      my="5"
+      px="2"
       style={{
         width: `100%`,
         maxWidth: 660,
@@ -87,12 +88,21 @@ function TypographyShowcase() {
       }}
     >
       <Heading>
-        vite-plugin-capsize-radix-ui <FaGithub style={{ height: 24 }} />
+        vite-plugin-capsize-radix-ui{` `}
+        <a
+          style={{ color: `inherit` }}
+          href="https://github.com/kyleamathews/vite-plugin-capsize-radix-ui/"
+        >
+          <FaGithub style={{ height: 24 }} />
+        </a>
       </Heading>
-      <Text as="p">For generating bulletproof typography css</Text>
+      <Text as="p">
+        Generate bulletproof typography css for{` `}
+        <Link href="https://www.radix-ui.com/">@radix-ui/themes</Link>
+      </Text>
       <Flex direction="column" gap="2">
         <Text as="label">
-          <Em>Pick a font</Em>
+          <Em>Pick font(s)</Em>
         </Text>
         <ThemeSelector
           themes={[
@@ -111,10 +121,11 @@ function TypographyShowcase() {
             { name: `Raleway/Libre Baskerville`, file: `/raleway.css` },
             { name: `Lato`, file: `/lato.css` },
             { name: `Oswald/PT Sans`, file: `/ptsans.css` },
+            { name: `Merriweather`, file: `/merriweather.css` },
           ]}
         />
       </Flex>
-      <Heading size="6">Header 1 - The Quantum Leap</Heading>
+      <Heading size="6">Size 6 - The Quantum Leap Across Time</Heading>
       <Text as="p">
         In the world of quantum computing, <Strong>entanglement</Strong> and
         {` `}
@@ -128,7 +139,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h2" size="5">
-        Header 2 - Relativity's Fabric
+        Size 5 - Relativity's Fabric is Fragile and Easily Broken
       </Heading>
       <Text as="p">
         Imagine spacetime as a <Link href="#">fabric</Link> stretched across the
@@ -138,7 +149,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h3" size="4">
-        Header 3 - The Genetic Code
+        Size 4 - The Genetic Code is Complex and Beautiful in its Simplicity
       </Heading>
       <Text as="p">
         Life's complexity is encoded in the{` `}
@@ -148,7 +159,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h4" size="3">
-        Header 4 - The Internet of Things (IoT)
+        Size 3 - The Internet of Things (IoT) — Overhyped or Everpresent?
       </Heading>
       <Text as="p">
         In the Internet of Things, everyday objects become interconnected,
@@ -157,7 +168,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h5" size="2">
-        Header 5 - Artificial Intelligence
+        Size 2 - Artificial Intelligence
       </Heading>
       <Text as="p">
         AI is like a phoenix in the tech world, continuously evolving from its
@@ -166,7 +177,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h6" size="1">
-        Header 6 - The Blockchain Revolution
+        Size 1 - The Blockchain Revolution
       </Heading>
       <Text as="p">
         Blockchain technology offers a decentralized ledger, a chain of blocks,
