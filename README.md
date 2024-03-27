@@ -2,7 +2,7 @@
 
 Generate bulletproof typography css for [@radix-ui/themes](https://www.radix-ui.com/)
 
-Makes changing fonts as easy as changing colors.
+Now changing fonts is as easy as changing colors.
 
 ## Why
 
