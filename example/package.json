@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capsizecss/core": "^4.1.0",
+    "@capsizecss/metrics": "^2.2.0",
     "@fontsource/alegreya": "^5.0.12",
     "@fontsource/alegreya-sans": "^5.0.12",
     "@fontsource/arvo": "^5.0.18",
@@ -35,6 +37,8 @@
     "@fontsource/source-serif-pro": "^5.0.8",
     "@fontsource/work-sans": "^5.0.17",
     "@radix-ui/themes": "^3.0.1",
+    "@types/mustache": "^4.2.5",
+    "mustache": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1"
