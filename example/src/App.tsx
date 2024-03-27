@@ -93,7 +93,7 @@ function TypographyShowcase() {
           style={{ color: `inherit` }}
           href="https://github.com/kyleamathews/vite-plugin-capsize-radix-ui/"
         >
-          <FaGithub style={{ height: 24 }} />
+          <FaGithub style={{ height: 18 }} />
         </a>
       </Heading>
       <Text as="p">
@@ -125,7 +125,9 @@ function TypographyShowcase() {
           ]}
         />
       </Flex>
-      <Heading size="6">Size 6 - The Quantum Leap Across Time</Heading>
+      <Heading size="6">
+        Size 6 - The Quantum Leap Across Time and Space
+      </Heading>
       <Text as="p">
         In the world of quantum computing, <Strong>entanglement</Strong> and
         {` `}
@@ -139,7 +141,7 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h2" size="5">
-        Size 5 - Relativity's Fabric is Fragile and Easily Broken
+        Size 5 - Relativity's Fabric is Both Fragile and Easily Broken Apiece
       </Heading>
       <Text as="p">
         Imagine spacetime as a <Link href="#">fabric</Link> stretched across the
@@ -149,7 +151,8 @@ function TypographyShowcase() {
       </Text>
 
       <Heading as="h3" size="4">
-        Size 4 - The Genetic Code is Complex and Beautiful in its Simplicity
+        Size 4 - The Genetic Code is Both Complex and Beautiful in its Modular
+        Simplicity
       </Heading>
       <Text as="p">
         Life's complexity is encoded in the{` `}
