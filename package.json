@@ -57,6 +57,7 @@
     "build": "npm run clean && tsup --external @capsizecss/core --external mustache --external @capsizecss/metrics",
     "check": "tsc",
     "clean": "shx rm -rf dist *.d.ts",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "tsup": {
