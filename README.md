@@ -6,11 +6,11 @@ Now changing fonts is as easy as changing colors.
 
 ## Why
 
-Getting custom fonts to look right is hard on the web — so most peoply
-rely on a few typography frameworks and fonts. But it doesn't have to be that
-way. [Capsize](https://seek-oss.github.io/capsize/) fixes text sizing and layout
-so changing fonts is as easy as changing colors. Your fonts should be as distinctive
-as the rest of your application.
+Getting custom fonts to look right is hard on the web — so most peoply rely on
+a few typography frameworks and fonts. But it doesn't have to be that way.
+[Capsize](https://seek-oss.github.io/capsize/) fixes text sizing and layout
+allowing for precise text alignment so changing fonts is as easy as changing
+colors.
 
 https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/3ec5d6ca-bf00-4b79-8552-4e3da3454f52
 
@@ -43,7 +43,7 @@ export default defineConfig({
   plugins: [
     react(),
     capsizeRadixPlugin({
-      // Import this file into your app.
+      // Import this file into your app after you import Radix's CSS.
       outputPath: `./public/merriweather.css`,
       // Pass in Capsize font metric objects.
       defaultFontStack: [merriweather, arial],
@@ -57,12 +57,20 @@ export default defineConfig({
 This plugin overrides all typography related CSS for Radix so you can simply
 use their typography components as normal (e.g. `<Heading>`, `<Text>`, `<Strong>`, etc)
 
+The plugin sets the variables for Radix's Type scale and Font family for Radix.
+It doesn't set Font weight. It sets the strong, em, and quote to use the default font family.
+
 See e.g. the [documentation for `<Text>`](https://www.radix-ui.com/themes/docs/components/text).
 
 They all share a `size` prop from "1" to "10". This corresponds to the optional
 `fontSizes` array passed to the plugin e.g. `size="0"` is the first value of
 the array, etc. `<Text>` defaults to `size="2"` and `<Heading>` defaults to
 `size="6"`.
+
+As Capsize trims _all_ space around text, you'll find that `<Flex gap="">` becomes
+your best friend for controlling spacing between elements e.g.
+
+<img width="669" alt="Screenshot 2024-03-28 at 10 44 10 AM" src="https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/b8552d58-4e2d-42d6-9b7b-a595466c2725">
 
 ### Fallback fonts
 
