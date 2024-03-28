@@ -77,7 +77,7 @@ function TypographyShowcase() {
   return (
     <Flex
       direction="column"
-      gap="5"
+      gap="6"
       my="5"
       px="2"
       style={{
@@ -96,11 +96,13 @@ function TypographyShowcase() {
           <FaGithub style={{ height: 18, width: 18 }} />
         </a>
       </Heading>
-      <Text as="p">
-        Generate bulletproof typography css for{` `}
-        <Link href="https://www.radix-ui.com/">@radix-ui/themes</Link>
-      </Text>
-      <Text as="p">Now changing fonts is as easy as changing colors.</Text>
+      <Flex direction="column" gap="5">
+        <Text as="p">
+          Generate bulletproof typography css for{` `}
+          <Link href="https://www.radix-ui.com/">@radix-ui/themes</Link>
+        </Text>
+        <Text as="p">Now changing fonts is as easy as changing colors.</Text>
+      </Flex>
       <Flex direction="column" gap="2">
         <Text as="label">
           <Em>Pick font(s)</Em>
