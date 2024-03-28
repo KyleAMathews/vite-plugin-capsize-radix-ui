@@ -94,8 +94,8 @@ to be slightly smaller than on desktop. We do that by shifting the text a size s
     ```ts
     [
       { fontSize: 9, lineHeight: 21 },
-      { fontSize: 11, lineHeight: 24 },
-      { fontSize: 12, lineHeight: 26 },
+      { fontSize: 11, lineHeight: 23 },
+      { fontSize: 12, lineHeight: 25 },
       { fontSize: 14, lineHeight: 27 },
       { fontSize: 18, lineHeight: 29 },
       { fontSize: 24, lineHeight: 36 },
