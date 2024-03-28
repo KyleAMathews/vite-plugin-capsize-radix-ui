@@ -97,9 +97,9 @@ async function generate(options: OptionsWithDefaults) {
     headingFontStack = defaultFontStack
   }
 
-  const mobileFontData = [options.fontSizes[0], ...options.fontSizes].map(
-    (fontSize, i) => {
-      const lineGap = options.lineHeights[i - 1] - fontSize
+  const mobileFontData = [options.textStyles[0], ...options.textStyles].map(
+    ({ fontSize, lineHeight }, i) => {
+      const lineGap = lineHeight - fontSize
       const style = createStyleString(
         `rt-r-size-${i + 1}:not(.rt-DialogContent)`,
         {
@@ -119,8 +119,8 @@ async function generate(options: OptionsWithDefaults) {
       }
     }
   )
-  const fontData = options.fontSizes.map((fontSize, i) => {
-    const lineGap = options.lineHeights[i] - fontSize
+  const fontData = options.textStyles.map(({ fontSize, lineHeight }, i) => {
+    const lineGap = lineHeight - fontSize
     const style = createStyleString(
       `rt-r-size-${i + 1}:not(.rt-DialogContent)`,
       {
@@ -141,34 +141,34 @@ async function generate(options: OptionsWithDefaults) {
   })
 
   const mobileTextStyles = createStyleString(`rt-Text`, {
-    capHeight: options.fontSizes[1],
-    lineGap: options.lineHeights[1] - options.fontSizes[1],
+    capHeight: options.textStyles[1].fontSize,
+    lineGap: options.textStyles[1].lineHeight - options.textStyles[1].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
   const mobileEmStyles = createStyleString(`rt-Em`, {
-    capHeight: options.fontSizes[1],
-    lineGap: options.lineHeights[1] - options.fontSizes[1],
+    capHeight: options.textStyles[1].fontSize,
+    lineGap: options.textStyles[1].lineHeight - options.textStyles[1].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
   const mobileQuoteStyles = createStyleString(`rt-Quote`, {
-    capHeight: options.fontSizes[1],
-    lineGap: options.lineHeights[1] - options.fontSizes[1],
+    capHeight: options.textStyles[1].fontSize,
+    lineGap: options.textStyles[1].lineHeight - options.textStyles[1].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
 
   const textStyles = createStyleString(`rt-Text`, {
-    capHeight: options.fontSizes[2],
-    lineGap: options.lineHeights[2] - options.fontSizes[2],
+    capHeight: options.textStyles[2].fontSize,
+    lineGap: options.textStyles[2].lineHeight - options.textStyles[2].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
   const emStyles = createStyleString(`rt-Em`, {
-    capHeight: options.fontSizes[2],
-    lineGap: options.lineHeights[2] - options.fontSizes[2],
+    capHeight: options.textStyles[2].fontSize,
+    lineGap: options.textStyles[2].lineHeight - options.textStyles[2].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
   const quoteStyles = createStyleString(`rt-Quote`, {
-    capHeight: options.fontSizes[2],
-    lineGap: options.lineHeights[2] - options.fontSizes[2],
+    capHeight: options.textStyles[2].fontSize,
+    lineGap: options.textStyles[2].lineHeight - options.textStyles[2].fontSize,
     fontMetrics: options.defaultFontStack[0],
   })
 
@@ -188,24 +188,37 @@ async function generate(options: OptionsWithDefaults) {
     })
   )
 }
+
+interface TextStyle {
+  fontSize: number
+  lineHeight: number
+}
+
 interface Options {
   outputPath: string
-  fontSizes?: number[]
-  lineHeights?: number[]
+  textStyles?: TextStyle[]
   defaultFontStack?: FontMetrics[]
   headingFontStack?: FontMetrics[]
 }
 interface OptionsWithDefaults {
   outputPath: string
-  fontSizes: number[]
-  lineHeights: number[]
+  textStyles: TextStyle[]
   defaultFontStack?: FontMetrics[]
   headingFontStack?: FontMetrics[]
 }
 export function capsizeRadixPlugin({
   outputPath,
-  fontSizes = [9, 11, 12, 14, 18, 24, 36, 48, 64],
-  lineHeights = [21, 24, 26, 27, 29, 36, 44, 52, 64],
+  textStyles = [
+    { fontSize: 9, lineHeight: 19 },
+    { fontSize: 11, lineHeight: 24 },
+    { fontSize: 12, lineHeight: 26 },
+    { fontSize: 14, lineHeight: 28 },
+    { fontSize: 18, lineHeight: 30 },
+    { fontSize: 24, lineHeight: 36 },
+    { fontSize: 36, lineHeight: 44 },
+    { fontSize: 48, lineHeight: 52 },
+    { fontSize: 64, lineHeight: 64 },
+  ],
   defaultFontStack,
   headingFontStack,
 }: Options): Plugin {
@@ -214,8 +227,7 @@ export function capsizeRadixPlugin({
     buildStart() {
       generate({
         outputPath,
-        fontSizes,
-        lineHeights,
+        textStyles,
         defaultFontStack,
         headingFontStack,
       })

@@ -81,8 +81,20 @@ to be slightly smaller than on desktop. We do that by shifting the text a size s
 
 ## Parameters:
 
-* __outputPath (string): Required__: The file path where the generated CSS or design tokens should be saved.
-* __fontSizes (number[]): Optional__: An array of numerical font size values (presumably in pixels). Defaults to [9, 11, 12, 14, 18, 24, 36, 48, 64].
-* __lineHeights (number[]): Optional__: An array of numerical line height values. Defaults to [21, 24, 26, 27, 29, 36, 44, 52, 64].
-* __defaultFontStack (FontMetrics[])__: Optional. An array of `FontMetrics` objects. Defaults to a System Font stack.
-* __headingFontStack (FontMetrics[])__: Optional. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
+* __outputPath (string): Required__. The file path where the generated CSS or design tokens should be saved.
+* __textStyles (TextStyle[]): Optional__. An array of objects, each representing a text style. Each object contains two properties: `fontSize` and `lineHeight`, which are numerical values, pixels for `fontSize` and pixels or relative value for `lineHeight`. Defaults to:
+    ```ts
+    [
+      { fontSize: 9, lineHeight: 21 },
+      { fontSize: 11, lineHeight: 24 },
+      { fontSize: 12, lineHeight: 26 },
+      { fontSize: 14, lineHeight: 27 },
+      { fontSize: 18, lineHeight: 29 },
+      { fontSize: 24, lineHeight: 36 },
+      { fontSize: 36, lineHeight: 44 },
+      { fontSize: 48, lineHeight: 52 },
+      { fontSize: 64, lineHeight: 64 }
+    ]
+    ```
+* __defaultFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to a System Font stack.
+* __headingFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
