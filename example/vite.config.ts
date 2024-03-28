@@ -1,6 +1,6 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
-import { radixCapsizePlugin } from "../plugin"
+import { radixCapsizePlugin } from "../src/index"
 import inter from "@capsizecss/metrics/inter"
 import arial from "@capsizecss/metrics/arial"
 import workSans from "@capsizecss/metrics/workSans"

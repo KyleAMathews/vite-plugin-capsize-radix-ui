@@ -2,10 +2,10 @@
 
 /* Override Radix variables */
 .radix-themes {
-  --default-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Cantarell", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
-  --em-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Cantarell", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
-  --quote-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Cantarell", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
-  --heading-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Cantarell", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --default-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --em-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --quote-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --heading-font-family: -apple-system, "-apple-system Fallback: Segoe UI", "-apple-system Fallback: Roboto", "-apple-system Fallback: Ubuntu", "-apple-system Fallback: Noto Sans", "Segoe UI", Roboto, Ubuntu, "Noto Sans", ui-sans-serif, system-ui, sans-serif;
 
   /* Mobile */
   --font-size-1: 12.7734px;

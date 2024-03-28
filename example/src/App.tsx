@@ -102,31 +102,31 @@ function TypographyShowcase() {
           <Link href="https://www.radix-ui.com/">@radix-ui/themes</Link>
         </Text>
         <Text as="p">Now changing fonts is as easy as changing colors.</Text>
-      </Flex>
-      <Flex direction="column" gap="2">
-        <Text as="label">
-          <Em>Pick font(s)</Em>
-        </Text>
-        <ThemeSelector
-          themes={[
-            { name: `System`, file: `/system.css` },
-            { name: `Inter`, file: `/inter-typography.css` },
-            {
-              name: `Work Sans/Quattrocento Sans`,
-              file: `/work-sans-typography.css`,
-            },
-            { name: `Josefin Sans`, file: `/josefin-typography.css` },
-            { name: `Source Serif/Source Sans`, file: `/source-serif.css` },
-            { name: `Rosario/Crimson Text`, file: `/rosario-crimson.css` },
-            { name: `Montserrat/Arvo`, file: `/montserrat-arvo.css` },
-            { name: `Alegreya Sans/Alegreya`, file: `/alegreya.css` },
-            { name: `Playfair Display/Fira Sans`, file: `/playfair.css` },
-            { name: `Raleway/Libre Baskerville`, file: `/raleway.css` },
-            { name: `Lato`, file: `/lato.css` },
-            { name: `Oswald/PT Sans`, file: `/ptsans.css` },
-            { name: `Merriweather`, file: `/merriweather.css` },
-          ]}
-        />
+        <Flex direction="column" gap="2">
+          <Text as="label">
+            <Em>Pick fontstack</Em>
+          </Text>
+          <ThemeSelector
+            themes={[
+              { name: `System`, file: `/system.css` },
+              { name: `Inter`, file: `/inter-typography.css` },
+              {
+                name: `Work Sans/Quattrocento Sans`,
+                file: `/work-sans-typography.css`,
+              },
+              { name: `Josefin Sans`, file: `/josefin-typography.css` },
+              { name: `Source Serif/Source Sans`, file: `/source-serif.css` },
+              { name: `Rosario/Crimson Text`, file: `/rosario-crimson.css` },
+              { name: `Montserrat/Arvo`, file: `/montserrat-arvo.css` },
+              { name: `Alegreya Sans/Alegreya`, file: `/alegreya.css` },
+              { name: `Playfair Display/Fira Sans`, file: `/playfair.css` },
+              { name: `Raleway/Libre Baskerville`, file: `/raleway.css` },
+              { name: `Lato`, file: `/lato.css` },
+              { name: `Oswald/PT Sans`, file: `/ptsans.css` },
+              { name: `Merriweather`, file: `/merriweather.css` },
+            ]}
+          />
+        </Flex>
       </Flex>
       <Heading size="6">
         Size 6 - The Quantum Leap Across Time and Space

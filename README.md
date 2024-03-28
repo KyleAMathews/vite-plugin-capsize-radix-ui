@@ -15,7 +15,7 @@ as the rest of your application.
 https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/3ec5d6ca-bf00-4b79-8552-4e3da3454f52
 
 Capsize makes fonts render the way you expect them to. With Capsize, if you
-want a font to have 16px height, it _actually_ will.
+assign a font to occupy 16px of height, it _actually_ will.
 
 This plugin glues Capsize with the fantastic Radix theming components.
 
@@ -45,7 +45,7 @@ export default defineConfig({
     capsizeRadixPlugin({
       // Import this file into your app.
       outputPath: `./public/merriweather.css`,
-      // Pass in Capsize font metric objects for generating the right CSS.
+      // Pass in Capsize font metric objects.
       defaultFontStack: [merriweather, arial],
       headingFontStack: [merriweatherSans, arial],
     }),
