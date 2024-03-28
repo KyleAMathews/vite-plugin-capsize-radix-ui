@@ -33,10 +33,10 @@
   "exports": {
     ".": {
       "types": {
-        "import": "./dist/index.d.ts",
-        "require": "./dist/index.d.cts"
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.ts"
       },
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
     "./package.json": "./package.json"
@@ -70,6 +70,5 @@
     ],
     "dts": true
   },
-  "type": "module",
   "types": "./dist/index.d.ts"
 }
