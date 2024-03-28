@@ -210,8 +210,8 @@ export function capsizeRadixPlugin({
   outputPath,
   textStyles = [
     { fontSize: 9, lineHeight: 19 },
-    { fontSize: 11, lineHeight: 24 },
-    { fontSize: 12, lineHeight: 26 },
+    { fontSize: 11, lineHeight: 23 },
+    { fontSize: 12, lineHeight: 25 },
     { fontSize: 14, lineHeight: 28 },
     { fontSize: 18, lineHeight: 30 },
     { fontSize: 24, lineHeight: 36 },

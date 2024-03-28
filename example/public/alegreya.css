@@ -13,9 +13,9 @@
   --font-size-2: 14.1287px;
   --line-height-2: 19px;
   --font-size-3: 17.2684px;
-  --line-height-3: 24px;
+  --line-height-3: 23px;
   --font-size-4: 18.8383px;
-  --line-height-4: 26px;
+  --line-height-4: 25px;
   --font-size-5: 21.978px;
   --line-height-5: 28px;
   --font-size-6: 28.2575px;
@@ -34,9 +34,9 @@
     --font-size-1: 14.1287px;
     --line-height-1: 19px;
     --font-size-2: 17.2684px;
-    --line-height-2: 24px;
+    --line-height-2: 23px;
     --font-size-3: 18.8383px;
-    --line-height-3: 26px;
+    --line-height-3: 25px;
     --font-size-4: 21.978px;
     --line-height-4: 28px;
     --font-size-5: 28.2575px;
@@ -61,36 +61,36 @@
 
 .rt-Text {
   font-size: 17.2684px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .rt-Text::before {
   content: "";
-  margin-bottom: -0.3934em;
+  margin-bottom: -0.3645em;
   display: table;
 }
 
 .rt-Text::after {
   content: "";
-  margin-top: -0.3594em;
+  margin-top: -0.3305em;
   display: table;
 }
 @media (min-width: 768px) {
   
 .rt-Text {
   font-size: 18.8383px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .rt-Text::before {
   content: "";
-  margin-bottom: -0.3886em;
+  margin-bottom: -0.362em;
   display: table;
 }
 
 .rt-Text::after {
   content: "";
-  margin-top: -0.3546em;
+  margin-top: -0.328em;
   display: table;
 }
 }
@@ -99,36 +99,36 @@
 
 .rt-Em {
   font-size: 17.2684px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .rt-Em::before {
   content: "";
-  margin-bottom: -0.3934em;
+  margin-bottom: -0.3645em;
   display: table;
 }
 
 .rt-Em::after {
   content: "";
-  margin-top: -0.3594em;
+  margin-top: -0.3305em;
   display: table;
 }
 @media (min-width: 768px) {
   
 .rt-Em {
   font-size: 18.8383px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .rt-Em::before {
   content: "";
-  margin-bottom: -0.3886em;
+  margin-bottom: -0.362em;
   display: table;
 }
 
 .rt-Em::after {
   content: "";
-  margin-top: -0.3546em;
+  margin-top: -0.328em;
   display: table;
 }
 }
@@ -137,36 +137,36 @@
 
 .rt-Quote {
   font-size: 17.2684px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .rt-Quote::before {
   content: "";
-  margin-bottom: -0.3934em;
+  margin-bottom: -0.3645em;
   display: table;
 }
 
 .rt-Quote::after {
   content: "";
-  margin-top: -0.3594em;
+  margin-top: -0.3305em;
   display: table;
 }
 @media (min-width: 768px) {
   
 .rt-Quote {
   font-size: 18.8383px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .rt-Quote::before {
   content: "";
-  margin-bottom: -0.3886em;
+  margin-bottom: -0.362em;
   display: table;
 }
 
 .rt-Quote::after {
   content: "";
-  margin-top: -0.3546em;
+  margin-top: -0.328em;
   display: table;
 }
 }
@@ -213,35 +213,35 @@
 
 .rt-r-size-3:not(.rt-DialogContent) {
   font-size: 17.2684px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3934em;
+  margin-bottom: -0.3645em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3594em;
+  margin-top: -0.3305em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent) {
   font-size: 18.8383px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3886em;
+  margin-bottom: -0.362em;
   display: table;
 }
 
 .rt-r-size-4:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3546em;
+  margin-top: -0.328em;
   display: table;
 }
 
@@ -367,35 +367,35 @@
   
 .rt-r-size-2:not(.rt-DialogContent) {
   font-size: 17.2684px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3934em;
+  margin-bottom: -0.3645em;
   display: table;
 }
 
 .rt-r-size-2:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3594em;
+  margin-top: -0.3305em;
   display: table;
 }
   
 .rt-r-size-3:not(.rt-DialogContent) {
   font-size: 18.8383px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::before {
   content: "";
-  margin-bottom: -0.3886em;
+  margin-bottom: -0.362em;
   display: table;
 }
 
 .rt-r-size-3:not(.rt-DialogContent)::after {
   content: "";
-  margin-top: -0.3546em;
+  margin-top: -0.328em;
   display: table;
 }
   
