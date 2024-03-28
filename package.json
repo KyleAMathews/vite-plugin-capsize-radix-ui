@@ -36,8 +36,8 @@
         "import": "./dist/index.d.mts",
         "require": "./dist/index.d.ts"
       },
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     },
     "./package.json": "./package.json"
   },
@@ -51,8 +51,8 @@
     "vite-plugin"
   ],
   "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "scripts": {
     "build": "npm run clean && tsup --external @capsizecss/core --external mustache --external @capsizecss/metrics",
     "check": "tsc",
