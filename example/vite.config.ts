@@ -1,6 +1,6 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
-import { radixCapsizePlugin } from "../src/index"
+import { capsizeRadixPlugin } from "../src/index"
 import inter from "@capsizecss/metrics/inter"
 import arial from "@capsizecss/metrics/arial"
 import workSans from "@capsizecss/metrics/workSans"
@@ -32,68 +32,68 @@ import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
 export default defineConfig({
   plugins: [
     react(),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/inter-typography.css`,
       defaultFontStack: [inter, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/work-sans-typography.css`,
       defaultFontStack: [quattrocentoSans, arial],
       headingFontStack: [workSans, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/josefin-typography.css`,
       defaultFontStack: [josefin, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/caveat-brush-typography.css`,
       defaultFontStack: [caveatBrush, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/source-serif.css`,
       headingFontStack: [sourceSerif, arial],
       defaultFontStack: [sourcesSans, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/rosario-crimson.css`,
       defaultFontStack: [crimsonText, arial],
       headingFontStack: [rosario, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/montserrat-arvo.css`,
       defaultFontStack: [arvo, arial],
       headingFontStack: [montserrat, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/alegreya.css`,
       defaultFontStack: [alegreya, arial],
       headingFontStack: [alegreyaSans, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/playfair.css`,
       defaultFontStack: [firaSans, arial],
       headingFontStack: [playfairDisplay, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/raleway.css`,
       defaultFontStack: [libreBaskerville, arial],
       headingFontStack: [raleway, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/lato.css`,
       defaultFontStack: [lato, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/ptsans.css`,
       defaultFontStack: [pTSans, arial],
       headingFontStack: [oswald, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/merriweather.css`,
       defaultFontStack: [merriweather, arial],
       headingFontStack: [merriweatherSans, arial],
     }),
-    radixCapsizePlugin({
+    capsizeRadixPlugin({
       outputPath: `./public/system.css`,
     }),
   ],

@@ -202,7 +202,7 @@ interface OptionsWithDefaults {
   defaultFontStack?: FontMetrics[]
   headingFontStack?: FontMetrics[]
 }
-export function radixCapsizePlugin({
+export function capsizeRadixPlugin({
   outputPath,
   fontSizes = [9, 11, 12, 14, 18, 24, 36, 48, 64],
   lineHeights = [21, 24, 26, 27, 29, 36, 44, 52, 64],
