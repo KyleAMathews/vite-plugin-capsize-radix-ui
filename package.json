@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-capsize-radix",
   "description": "Great Typography with Radix & Capsize",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@capsizecss/core": "^4.1.0",
