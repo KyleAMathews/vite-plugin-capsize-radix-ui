@@ -165,14 +165,14 @@ async function generate(options: OptionsWithDefaults) {
   ].map(({ fontSize, lineHeight }, i) => {
     const lineGap = lineHeight - fontSize
     const style = createStyleString(`rt-Code.rt-r-size-${i + 1}`, {
-      capHeight: fontSize,
+      capHeight: fontSize * 0.95,
       lineGap,
       fontMetrics: options.codingFontStack![0],
     })
     return {
       style,
       ...createStyleObject({
-        capHeight: fontSize,
+        capHeight: fontSize * 0.95,
         lineGap,
         fontMetrics: options.codingFontStack![0],
       }),
