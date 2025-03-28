@@ -24,6 +24,7 @@ import oswald from "@capsizecss/metrics/oswald"
 import pTSans from "@capsizecss/metrics/pTSans"
 import merriweather from "@capsizecss/metrics/merriweather"
 import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
+import sourceCodePro from "@capsizecss/metrics/sourceCodePro"
 
 // For variable fonts, we need to modify the familyName
 // workSans.familyName = `Work Sans Variable`
@@ -35,6 +36,7 @@ export default defineConfig({
     capsizeRadixPlugin({
       outputPath: `./public/inter-typography.css`,
       defaultFontStack: [inter, arial],
+      codingFontStack: [sourceCodePro],
     }),
     capsizeRadixPlugin({
       outputPath: `./public/work-sans-typography.css`,

@@ -37,6 +37,7 @@ import react from "@vitejs/plugin-react-swc"
 import { capsizeRadixPlugin } from "vite-plugin-capsize-radix"
 import merriweather from "@capsizecss/metrics/merriweather"
 import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
+import sourceCodePro from "@capsizecss/metrics/sourceCodePro"
 import arial from "@capsizecss/metrics/arial"
 
 export default defineConfig({
@@ -48,6 +49,7 @@ export default defineConfig({
       // Pass in Capsize font metric objects.
       defaultFontStack: [merriweather, arial],
       headingFontStack: [merriweatherSans, arial],
+      codingFontStack: [sourceCodePro, arial],
     }),
   ]
 })
@@ -59,6 +61,7 @@ use their typography components as normal (e.g. `<Heading>`, `<Text>`, `<Strong>
 
 The plugin sets the variables for Radix's Type scale and Font family for Radix.
 It doesn't set Font weight. It sets the strong, em, and quote to use the default font family.
+You can set the default, heading, and coding font stacks separately.
 
 See e.g. the [documentation for `<Text>`](https://www.radix-ui.com/themes/docs/components/text).
 
@@ -106,3 +109,4 @@ to be slightly smaller than on desktop. We do that by shifting the text a size s
     ```
 * __defaultFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to a System Font stack.
 * __headingFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
+* __codingFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.

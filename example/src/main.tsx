@@ -26,6 +26,7 @@ import "@fontsource/pt-sans/latin.css"
 import "@fontsource/oswald/latin.css"
 import "@fontsource/merriweather/latin.css"
 import "@fontsource/merriweather-sans/latin.css"
+import "@fontsource/source-code-pro/latin.css"
 
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
   <React.StrictMode>
