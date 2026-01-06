@@ -522,310 +522,310 @@
   display: inline-block;
 }
 
-/* Class names for text elements */
+/* Size variants for text elements only */
 
-.rt-r-size-1:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1 {
   font-size: 12.3705px;
   line-height: 19px;
 }
 
-.rt-r-size-1:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1::before {
   content: "";
   margin-bottom: -0.4042em;
   display: table;
 }
 
-.rt-r-size-1:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1::after {
   content: "";
   margin-top: -0.4042em;
   display: table;
 }
 
-.rt-r-size-2:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2 {
   font-size: 15.1195px;
   line-height: 23px;
 }
 
-.rt-r-size-2:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2::before {
   content: "";
   margin-bottom: -0.3968em;
   display: table;
 }
 
-.rt-r-size-2:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2::after {
   content: "";
   margin-top: -0.3968em;
   display: table;
 }
 
-.rt-r-size-3:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3 {
   font-size: 16.494px;
   line-height: 25px;
 }
 
-.rt-r-size-3:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3::before {
   content: "";
   margin-bottom: -0.3941em;
   display: table;
 }
 
-.rt-r-size-3:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3::after {
   content: "";
   margin-top: -0.3941em;
   display: table;
 }
 
-.rt-r-size-4:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4 {
   font-size: 19.243px;
   line-height: 28px;
 }
 
-.rt-r-size-4:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4::before {
   content: "";
   margin-bottom: -0.3638em;
   display: table;
 }
 
-.rt-r-size-4:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4::after {
   content: "";
   margin-top: -0.3638em;
   display: table;
 }
 
-.rt-r-size-5:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5 {
   font-size: 24.7409px;
   line-height: 30px;
 }
 
-.rt-r-size-5:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5::before {
   content: "";
   margin-bottom: -0.2425em;
   display: table;
 }
 
-.rt-r-size-5:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5::after {
   content: "";
   margin-top: -0.2425em;
   display: table;
 }
 
-.rt-r-size-6:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6 {
   font-size: 32.9879px;
   line-height: 36px;
 }
 
-.rt-r-size-6:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6::before {
   content: "";
   margin-bottom: -0.1819em;
   display: table;
 }
 
-.rt-r-size-6:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6::after {
   content: "";
   margin-top: -0.1819em;
   display: table;
 }
 
-.rt-r-size-7:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7 {
   font-size: 49.4819px;
   line-height: 44px;
 }
 
-.rt-r-size-7:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7::before {
   content: "";
   margin-bottom: -0.0808em;
   display: table;
 }
 
-.rt-r-size-7:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7::after {
   content: "";
   margin-top: -0.0808em;
   display: table;
 }
 
-.rt-r-size-8:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8 {
   font-size: 65.9758px;
   line-height: 52px;
 }
 
-.rt-r-size-8:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8::before {
   content: "";
   margin-bottom: -0.0303em;
   display: table;
 }
 
-.rt-r-size-8:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8::after {
   content: "";
   margin-top: -0.0303em;
   display: table;
 }
 
-.rt-r-size-9:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9 {
   font-size: 87.9678px;
   line-height: 64px;
 }
 
-.rt-r-size-9:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9::before {
   content: "";
   margin-bottom: 0em;
   display: table;
 }
 
-.rt-r-size-9:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9::after {
   content: "";
   margin-top: 0em;
   display: table;
 }
 @media (min-width: 768px) {
   
-.rt-r-size-1:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1 {
   font-size: 12.3705px;
   line-height: 19px;
 }
 
-.rt-r-size-1:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1::before {
   content: "";
   margin-bottom: -0.4042em;
   display: table;
 }
 
-.rt-r-size-1:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-1::after {
   content: "";
   margin-top: -0.4042em;
   display: table;
 }
   
-.rt-r-size-2:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2 {
   font-size: 15.1195px;
   line-height: 23px;
 }
 
-.rt-r-size-2:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2::before {
   content: "";
   margin-bottom: -0.3968em;
   display: table;
 }
 
-.rt-r-size-2:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-2::after {
   content: "";
   margin-top: -0.3968em;
   display: table;
 }
   
-.rt-r-size-3:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3 {
   font-size: 16.494px;
   line-height: 25px;
 }
 
-.rt-r-size-3:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3::before {
   content: "";
   margin-bottom: -0.3941em;
   display: table;
 }
 
-.rt-r-size-3:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-3::after {
   content: "";
   margin-top: -0.3941em;
   display: table;
 }
   
-.rt-r-size-4:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4 {
   font-size: 19.243px;
   line-height: 28px;
 }
 
-.rt-r-size-4:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4::before {
   content: "";
   margin-bottom: -0.3638em;
   display: table;
 }
 
-.rt-r-size-4:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-4::after {
   content: "";
   margin-top: -0.3638em;
   display: table;
 }
   
-.rt-r-size-5:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5 {
   font-size: 24.7409px;
   line-height: 30px;
 }
 
-.rt-r-size-5:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5::before {
   content: "";
   margin-bottom: -0.2425em;
   display: table;
 }
 
-.rt-r-size-5:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-5::after {
   content: "";
   margin-top: -0.2425em;
   display: table;
 }
   
-.rt-r-size-6:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6 {
   font-size: 32.9879px;
   line-height: 36px;
 }
 
-.rt-r-size-6:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6::before {
   content: "";
   margin-bottom: -0.1819em;
   display: table;
 }
 
-.rt-r-size-6:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-6::after {
   content: "";
   margin-top: -0.1819em;
   display: table;
 }
   
-.rt-r-size-7:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7 {
   font-size: 49.4819px;
   line-height: 44px;
 }
 
-.rt-r-size-7:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7::before {
   content: "";
   margin-bottom: -0.0808em;
   display: table;
 }
 
-.rt-r-size-7:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-7::after {
   content: "";
   margin-top: -0.0808em;
   display: table;
 }
   
-.rt-r-size-8:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8 {
   font-size: 65.9758px;
   line-height: 52px;
 }
 
-.rt-r-size-8:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8::before {
   content: "";
   margin-bottom: -0.0303em;
   display: table;
 }
 
-.rt-r-size-8:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-8::after {
   content: "";
   margin-top: -0.0303em;
   display: table;
 }
   
-.rt-r-size-9:not(.rt-DialogContent) {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9 {
   font-size: 87.9678px;
   line-height: 64px;
 }
 
-.rt-r-size-9:not(.rt-DialogContent)::before {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9::before {
   content: "";
   margin-bottom: 0em;
   display: table;
 }
 
-.rt-r-size-9:not(.rt-DialogContent)::after {
+:where(.rt-Text, .rt-Heading, .rt-Em, .rt-Quote, .rt-Link).rt-r-size-9::after {
   content: "";
   margin-top: 0em;
   display: table;

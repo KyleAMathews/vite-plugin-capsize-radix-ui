@@ -31,6 +31,7 @@ if you're interested on collaborating on one.
 ### Add to vite.config.ts
 
 A sample React config:
+
 ```ts
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react-swc"
@@ -51,11 +52,12 @@ export default defineConfig({
       headingFontStack: [merriweatherSans, arial],
       codingFontStack: [sourceCodePro, arial],
     }),
-  ]
+  ],
 })
 ```
 
 ### Using with Radix UI
+
 This plugin overrides all typography related CSS for Radix so you can simply
 use their typography components as normal (e.g. `<Heading>`, `<Text>`, `<Strong>`, etc)
 
@@ -87,26 +89,27 @@ Capsize has precalculated metrics for system and many open source fonts. If you'
 using a custom font, you can calculate the font metrics using their [@capsizecss/unpack](https://github.com/seek-oss/capsize?tab=readme-ov-file#unpack) package.
 
 ## Responsive styles
+
 This plugin automatically generates responsive styles. Typically you want your mobile font-size
 to be slightly smaller than on desktop. We do that by shifting the text a size smaller on mobile.
 
 ## Parameters:
 
-* __outputPath (string): Required__. The file path where the generated CSS or design tokens should be saved.
-* __textStyles (TextStyle[]): Optional__. An array of objects, each representing a text style. Each object contains two properties: `fontSize` and `lineHeight`, which are numerical values, pixels for `fontSize` and pixels or relative value for `lineHeight`. Defaults to:
-    ```ts
-    [
-      { fontSize: 9, lineHeight: 21 },
-      { fontSize: 11, lineHeight: 23 },
-      { fontSize: 12, lineHeight: 25 },
-      { fontSize: 14, lineHeight: 27 },
-      { fontSize: 18, lineHeight: 29 },
-      { fontSize: 24, lineHeight: 36 },
-      { fontSize: 36, lineHeight: 44 },
-      { fontSize: 48, lineHeight: 52 },
-      { fontSize: 64, lineHeight: 64 }
-    ]
-    ```
-* __defaultFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to a System Font stack.
-* __headingFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
-* __codingFontStack (FontMetrics[]): Optional__. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
+- **outputPath (string): Required**. The file path where the generated CSS or design tokens should be saved.
+- **textStyles (TextStyle[]): Optional**. An array of objects, each representing a text style. Each object contains two properties: `fontSize` and `lineHeight`, which are numerical values, pixels for `fontSize` and pixels or relative value for `lineHeight`. Defaults to:
+  ```ts
+  ;[
+    { fontSize: 9, lineHeight: 21 },
+    { fontSize: 11, lineHeight: 23 },
+    { fontSize: 12, lineHeight: 25 },
+    { fontSize: 14, lineHeight: 27 },
+    { fontSize: 18, lineHeight: 29 },
+    { fontSize: 24, lineHeight: 36 },
+    { fontSize: 36, lineHeight: 44 },
+    { fontSize: 48, lineHeight: 52 },
+    { fontSize: 64, lineHeight: 64 },
+  ]
+  ```
+- **defaultFontStack (FontMetrics[]): Optional**. An array of `FontMetrics` objects. Defaults to a System Font stack.
+- **headingFontStack (FontMetrics[]): Optional**. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
+- **codingFontStack (FontMetrics[]): Optional**. An array of `FontMetrics` objects. Defaults to your `defaultFontStack`.
