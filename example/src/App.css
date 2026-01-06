@@ -1,4 +1,5 @@
-.radix-themes, body {
+.radix-themes,
+body {
   --color-background: var(--indigo-2);
   background: var(--color-background);
 }
