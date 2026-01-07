@@ -99,11 +99,11 @@ to be slightly smaller than on desktop. We do that by shifting the text a size s
 - **textStyles (TextStyle[]): Optional**. An array of objects, each representing a text style. Each object contains two properties: `fontSize` and `lineHeight`, which are numerical values, pixels for `fontSize` and pixels or relative value for `lineHeight`. Defaults to:
   ```ts
   ;[
-    { fontSize: 9, lineHeight: 21 },
+    { fontSize: 9, lineHeight: 19 },
     { fontSize: 11, lineHeight: 23 },
     { fontSize: 12, lineHeight: 25 },
-    { fontSize: 14, lineHeight: 27 },
-    { fontSize: 18, lineHeight: 29 },
+    { fontSize: 14, lineHeight: 28 },
+    { fontSize: 18, lineHeight: 30 },
     { fontSize: 24, lineHeight: 36 },
     { fontSize: 36, lineHeight: 44 },
     { fontSize: 48, lineHeight: 52 },

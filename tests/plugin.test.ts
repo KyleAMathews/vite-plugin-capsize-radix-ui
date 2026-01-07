@@ -82,4 +82,61 @@ describe(`capsizeRadixPlugin`, () => {
     expect(css).toContain(`--font-size-1:`)
     expect(css).toContain(`--line-height-1:`)
   })
+
+  describe(`validation errors`, () => {
+    it(`throws error when textStyles has fewer than 3 entries`, () => {
+      const plugin = capsizeRadixPlugin({
+        ...pluginOptions,
+        textStyles: [
+          { fontSize: 12, lineHeight: 20 },
+          { fontSize: 14, lineHeight: 22 },
+        ],
+      })
+
+      expect(() => runBuildStart(plugin)).toThrow(
+        `[capsize-radix] textStyles must have at least 3 entries (found 2)`
+      )
+    })
+
+    it(`throws error when fontSize is not a positive number`, () => {
+      const plugin = capsizeRadixPlugin({
+        ...pluginOptions,
+        textStyles: [
+          { fontSize: -5, lineHeight: 20 },
+          { fontSize: 14, lineHeight: 22 },
+          { fontSize: 16, lineHeight: 24 },
+        ],
+      })
+
+      expect(() => runBuildStart(plugin)).toThrow(
+        `[capsize-radix] textStyles[0].fontSize must be a positive number`
+      )
+    })
+
+    it(`throws error when lineHeight is not a positive number`, () => {
+      const plugin = capsizeRadixPlugin({
+        ...pluginOptions,
+        textStyles: [
+          { fontSize: 12, lineHeight: 0 },
+          { fontSize: 14, lineHeight: 22 },
+          { fontSize: 16, lineHeight: 24 },
+        ],
+      })
+
+      expect(() => runBuildStart(plugin)).toThrow(
+        `[capsize-radix] textStyles[0].lineHeight must be a positive number`
+      )
+    })
+
+    it(`throws error when output directory does not exist`, () => {
+      const plugin = capsizeRadixPlugin({
+        ...pluginOptions,
+        outputPath: `./nonexistent-dir/test.css`,
+      })
+
+      expect(() => runBuildStart(plugin)).toThrow(
+        `[capsize-radix] Output directory does not exist: ./nonexistent-dir`
+      )
+    })
+  })
 })
