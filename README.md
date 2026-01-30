@@ -56,6 +56,31 @@ export default defineConfig({
 })
 ```
 
+### Install Fonts via Fontsource
+
+For open source fonts, use [@fontsource](https://fontsource.org/):
+
+```bash
+pnpm add @fontsource/merriweather @fontsource/merriweather-sans @fontsource/source-code-pro
+```
+
+### Import CSS in Correct Order
+
+In your entry file (e.g., `main.tsx`), the import order matters:
+
+```typescript
+// 1. Radix base styles FIRST
+import "@radix-ui/themes/styles.css"
+
+// 2. Your font CSS from Fontsource
+import "@fontsource/merriweather/latin.css"
+
+// 3. Generated typography CSS LAST (overrides Radix variables)
+import "/merriweather.css"
+```
+
+**Critical**: The generated typography CSS must come AFTER `@radix-ui/themes/styles.css` to properly override the CSS variables.
+
 ### Using with Radix UI
 
 This plugin overrides all typography related CSS for Radix so you can simply
@@ -72,8 +97,25 @@ They all share a `size` prop from "1" to "10". This corresponds to the optional
 the array, etc. `<Text>` defaults to `size="2"` and `<Heading>` defaults to
 `size="6"`.
 
-As Capsize trims _all_ space around text, you'll find that `<Flex gap="[space]">` becomes
-your best friend for controlling spacing between elements e.g.
+### Spacing with Capsize
+
+Because Capsize trims the invisible whitespace above and below text, **adjacent text elements will sit directly against each other** without any natural spacing. This is by design—it gives you precise control over layout.
+
+You must explicitly add spacing between text elements using `<Flex gap>`:
+
+```tsx
+// Without gap - heading and text will touch
+<Flex direction="column">
+  <Heading>Title</Heading>
+  <Text>Body text...</Text>
+</Flex>
+
+// With gap - natural spacing between elements
+<Flex direction="column" gap="2">
+  <Heading>Title</Heading>
+  <Text>Body text...</Text>
+</Flex>
+```
 
 <img width="669" alt="Screenshot 2024-03-28 at 10 44 10 AM" src="https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/b8552d58-4e2d-42d6-9b7b-a595466c2725">
 
