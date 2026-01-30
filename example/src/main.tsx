@@ -27,6 +27,23 @@ import "@fontsource/oswald/latin.css"
 import "@fontsource/merriweather/latin.css"
 import "@fontsource/merriweather-sans/latin.css"
 import "@fontsource/source-code-pro/latin.css"
+// Modern fonts (2015-2025)
+import "@fontsource/instrument-serif/latin.css"
+import "@fontsource/instrument-sans/latin.css"
+import "@fontsource/dm-serif-display/latin.css"
+import "@fontsource/dm-sans/latin.css"
+import "@fontsource/fraunces/latin.css"
+import "@fontsource/epilogue/latin.css"
+import "@fontsource/plus-jakarta-sans/latin.css"
+import "@fontsource/space-grotesk/latin.css"
+import "@fontsource/space-mono/latin.css"
+import "@fontsource/newsreader/latin.css"
+import "@fontsource/figtree/latin.css"
+import "@fontsource/bodoni-moda/latin.css"
+import "@fontsource/outfit/latin.css"
+import "@fontsource/manrope/latin.css"
+import "@fontsource/atkinson-hyperlegible/latin.css"
+import "@fontsource/literata/latin.css"
 
 ReactDOM.createRoot(document.getElementById(`root`)!).render(
   <React.StrictMode>

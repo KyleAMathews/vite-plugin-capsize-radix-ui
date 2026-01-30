@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc"
 import { capsizeRadixPlugin } from "../src/index"
 import inter from "@capsizecss/metrics/inter"
 import arial from "@capsizecss/metrics/arial"
+import georgia from "@capsizecss/metrics/georgia"
 import workSans from "@capsizecss/metrics/workSans"
 import josefin from "@capsizecss/metrics/josefinSans"
 import caveatBrush from "@capsizecss/metrics/caveatBrush"
@@ -25,6 +26,23 @@ import pTSans from "@capsizecss/metrics/pTSans"
 import merriweather from "@capsizecss/metrics/merriweather"
 import merriweatherSans from "@capsizecss/metrics/merriweatherSans"
 import sourceCodePro from "@capsizecss/metrics/sourceCodePro"
+// Modern fonts (2015-2025)
+import instrumentSerif from "@capsizecss/metrics/instrumentSerif"
+import instrumentSans from "@capsizecss/metrics/instrumentSans"
+import dMSerifDisplay from "@capsizecss/metrics/dMSerifDisplay"
+import dMSans from "@capsizecss/metrics/dMSans"
+import fraunces from "@capsizecss/metrics/fraunces"
+import epilogue from "@capsizecss/metrics/epilogue"
+import plusJakartaSans from "@capsizecss/metrics/plusJakartaSans"
+import spaceGrotesk from "@capsizecss/metrics/spaceGrotesk"
+import spaceMono from "@capsizecss/metrics/spaceMono"
+import newsreader from "@capsizecss/metrics/newsreader"
+import figtree from "@capsizecss/metrics/figtree"
+import bodoniModa from "@capsizecss/metrics/bodoniModa"
+import outfit from "@capsizecss/metrics/outfit"
+import manrope from "@capsizecss/metrics/manrope"
+import atkinsonHyperlegible from "@capsizecss/metrics/atkinsonHyperlegible"
+import literata from "@capsizecss/metrics/literata"
 
 // For variable fonts, we need to modify the familyName
 // workSans.familyName = `Work Sans Variable`
@@ -97,6 +115,53 @@ export default defineConfig({
     }),
     capsizeRadixPlugin({
       outputPath: `./public/system.css`,
+    }),
+    // Modern fonts (2015-2025)
+    capsizeRadixPlugin({
+      outputPath: `./public/instrument.css`,
+      defaultFontStack: [instrumentSans, arial],
+      headingFontStack: [instrumentSerif, georgia],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/dm-serif.css`,
+      defaultFontStack: [dMSans, arial],
+      headingFontStack: [dMSerifDisplay, georgia],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/fraunces.css`,
+      defaultFontStack: [epilogue, arial],
+      headingFontStack: [fraunces, georgia],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/plus-jakarta.css`,
+      defaultFontStack: [plusJakartaSans, arial],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/space-grotesk.css`,
+      defaultFontStack: [spaceGrotesk, arial],
+      codingFontStack: [spaceMono],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/newsreader.css`,
+      defaultFontStack: [newsreader, georgia],
+      headingFontStack: [figtree, arial],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/bodoni.css`,
+      defaultFontStack: [outfit, arial],
+      headingFontStack: [bodoniModa, georgia],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/manrope.css`,
+      defaultFontStack: [manrope, arial],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/atkinson.css`,
+      defaultFontStack: [atkinsonHyperlegible, arial],
+    }),
+    capsizeRadixPlugin({
+      outputPath: `./public/literata.css`,
+      defaultFontStack: [literata, georgia],
     }),
   ],
 })

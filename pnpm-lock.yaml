@@ -90,6 +90,12 @@ importers:
       '@fontsource/arvo':
         specifier: ^5.2.7
         version: 5.2.7
+      '@fontsource/atkinson-hyperlegible':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/bodoni-moda':
+        specifier: ^5.2.7
+        version: 5.2.7
       '@fontsource/caveat-brush':
         specifier: ^5.2.8
         version: 5.2.8
@@ -99,9 +105,30 @@ importers:
       '@fontsource/crimson-text':
         specifier: ^5.2.7
         version: 5.2.7
+      '@fontsource/dm-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/dm-serif-display':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/epilogue':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/figtree':
+        specifier: ^5.2.10
+        version: 5.2.10
       '@fontsource/fira-sans':
         specifier: ^5.2.7
         version: 5.2.7
+      '@fontsource/fraunces':
+        specifier: ^5.2.9
+        version: 5.2.9
+      '@fontsource/instrument-sans':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/instrument-serif':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@fontsource/inter':
         specifier: ^5.2.8
         version: 5.2.8
@@ -114,6 +141,12 @@ importers:
       '@fontsource/libre-baskerville':
         specifier: ^5.2.10
         version: 5.2.10
+      '@fontsource/literata':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/manrope':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@fontsource/merriweather':
         specifier: ^5.2.11
         version: 5.2.11
@@ -123,10 +156,19 @@ importers:
       '@fontsource/montserrat':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource/newsreader':
+        specifier: ^5.2.10
+        version: 5.2.10
       '@fontsource/oswald':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource/outfit':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@fontsource/playfair-display':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/plus-jakarta-sans':
         specifier: ^5.2.8
         version: 5.2.8
       '@fontsource/pt-sans':
@@ -153,6 +195,12 @@ importers:
       '@fontsource/source-serif-pro':
         specifier: ^5.0.8
         version: 5.2.5
+      '@fontsource/space-grotesk':
+        specifier: ^5.2.10
+        version: 5.2.10
+      '@fontsource/space-mono':
+        specifier: ^5.2.9
+        version: 5.2.9
       '@fontsource/work-sans':
         specifier: ^5.2.8
         version: 5.2.8
@@ -565,6 +613,12 @@ packages:
   '@fontsource/arvo@5.2.7':
     resolution: {integrity: sha512-CqxrDBkwj8av+R/aH9C5gg/4GAvWUiZLj1Y9z3En1njXaDqV7njZt5qrQV4lhTOLe270PE5jdjKXozecKXiUbA==}
 
+  '@fontsource/atkinson-hyperlegible@5.2.8':
+    resolution: {integrity: sha512-HciLcJ5DIK/OVOdo71EbEN4NnvDFlp6/SpAxtcbWf2aAdcsOuPqITxj5KNEXb48qSPSdnnZdGGnSJChPKi3/bA==}
+
+  '@fontsource/bodoni-moda@5.2.7':
+    resolution: {integrity: sha512-lsOtgDTdfmoenXOskQ63tbzbVJh05qlc1xLaImG2qayaF88kiVvLAk1nM37eoYRMZTrDZlN5zlu6zG8TnXgn4w==}
+
   '@fontsource/caveat-brush@5.2.8':
     resolution: {integrity: sha512-oCxc0tr/6zWrlhhds+LSoFctIvyYIaIJvaZtWLUhvVP/rczR2KjlUs4IEq/8LzF43IZMbqE3BBJR3MAaPCkESQ==}
 
@@ -574,8 +628,29 @@ packages:
   '@fontsource/crimson-text@5.2.7':
     resolution: {integrity: sha512-hlUb/1GdXB2xc0usGMPp6qEI7Z4kQU1FEOYvozsN+cUC/Nh4kvEVVc0kHpj8B5G0hjZzfP+UmrLYHOaNAfMK5w==}
 
+  '@fontsource/dm-sans@5.2.8':
+    resolution: {integrity: sha512-tlovG42m9ESG28WiHpLq3F5umAlm64rv0RkqTbYowRn70e9OlRr5a3yTJhrhrY+k5lftR/OFJjPzOLQzk8EfCA==}
+
+  '@fontsource/dm-serif-display@5.2.8':
+    resolution: {integrity: sha512-GYSDSlGU6vyhv9a5MwaiVNf9HCuSVpK8hEFRyG4NNDHCDeHiX7YHDAcWsaoLKKcfXLgWG9YkBkk9T3SxM4rAjQ==}
+
+  '@fontsource/epilogue@5.2.8':
+    resolution: {integrity: sha512-+V1T+G9RXtLiImA1khsXG6jd5Io/UMJ6LJgYyAYShU9nzZJtI3G/4Hof9Zi6KUMmmH+oTxVN0rXdZc6AOK8Sqg==}
+
+  '@fontsource/figtree@5.2.10':
+    resolution: {integrity: sha512-nlO06N1qad88ySqzi/a2xwDBkamfZ4MFilP8la5dDyRY36ED0UYTs2hhtwJf8fM52+Nn7dQO2r27reKaXOyOIg==}
+
   '@fontsource/fira-sans@5.2.7':
     resolution: {integrity: sha512-5DE4AealD/VnbwdzMgnpWfCttMQBbteNiK9DCJE7cVwZEbDTPLUoFDMMvxNQ498nZc5in7Mta9c/s+3Ehh0BAg==}
+
+  '@fontsource/fraunces@5.2.9':
+    resolution: {integrity: sha512-XDzuddBtoC7BZgZdBn6b7hsFZY2+V1hgN7yca5fBTKuHjb/lOd45a0Ji8dTUgFhPoL7RdGupo+bC2BFSt6UH8Q==}
+
+  '@fontsource/instrument-sans@5.2.8':
+    resolution: {integrity: sha512-TJRYVbjZPx4DGMMU5lb5eFKrP3iLe9h7rz8Pk+dP958IZKiyHjYGXXwQZapVbBXcQN+YOiviVhAWxrjv8g6Z6g==}
+
+  '@fontsource/instrument-serif@5.2.8':
+    resolution: {integrity: sha512-s+bkz+syj2rO00Rmq9g0P+PwuLig33DR1xDR8pTWmovH1pUjwnncrFk++q9mmOex8fUQ7oW80gPpPDaw7V1MMw==}
 
   '@fontsource/inter@5.2.8':
     resolution: {integrity: sha512-P6r5WnJoKiNVV+zvW2xM13gNdFhAEpQ9dQJHt3naLvfg+LkF2ldgSLiF4T41lf1SQCM9QmkqPTn4TH568IRagg==}
@@ -589,6 +664,12 @@ packages:
   '@fontsource/libre-baskerville@5.2.10':
     resolution: {integrity: sha512-Y/bGj4cOdWhAxU4+sBPen3MB5Og3t/WvezVL+05CJ7cvhDQUKpQFUuw/hm1IQKRc9u0lWs8VP2MKDOK2uQtloQ==}
 
+  '@fontsource/literata@5.2.8':
+    resolution: {integrity: sha512-Rj3eEQeu7+yBw9ZjXxcRiKDDrhbhpCyb0b79VJVCjDF1fdgJ8gDr9C1SRFLwfi+VaHEkhJDnRGm25fq1Yk+wNg==}
+
+  '@fontsource/manrope@5.2.8':
+    resolution: {integrity: sha512-gJHJmcuUk7qWcNCfcAri/DJQtXtBYqi9yKratr4jXhSo0I3xUtNNKI+igQIcw5c+m95g0vounk8ZnX/kb8o0TA==}
+
   '@fontsource/merriweather-sans@5.2.7':
     resolution: {integrity: sha512-QqwHyvp6KbcJ/ebnxWn33JzmeSDAMvi/EZmHwegELJc7JGuHaSRIh2/CC1H5KMP4Ez8Zyu/8GD3xxeTiQPt/sw==}
 
@@ -598,11 +679,20 @@ packages:
   '@fontsource/montserrat@5.2.8':
     resolution: {integrity: sha512-xTjLxSbSfCycDB0pwmNsfNvdfWPaDaRQ2LC6yt/ZI7SdvXG52zHnzNYC/09mzuAuWNJyShkteutfCoDgym56hQ==}
 
+  '@fontsource/newsreader@5.2.10':
+    resolution: {integrity: sha512-TFaYzoFhDqarUyV2yYjgZZEwT4bpaj6sGBnXSnFknQ/QB8/9LzfY6IO9+inHOX4zzPp87Z7/KuG1OI5gr91Q3A==}
+
   '@fontsource/oswald@5.2.8':
     resolution: {integrity: sha512-DFoPK1BqsFIQhVjs2xgO/oL9veF9oUJgFojEWIU+nazUrfqsBDtAMI4n9L9CZFX3kQNDLcCyzKx1xoEDvQT4WQ==}
 
+  '@fontsource/outfit@5.2.8':
+    resolution: {integrity: sha512-rXC6g0MqD7cOBjht0bMqc43qM6lRqDLML9KXsmg9uykz0wLQhy8Z/ajrMG6iyoT3NJR+MYgU+OEHp7uHoTb+Yw==}
+
   '@fontsource/playfair-display@5.2.8':
     resolution: {integrity: sha512-fUEhib70SszNhQVsGbUMSsWJhr7Je0rdeuZdtGpDNu0GKF1xJM8QhpI/y0pckU25GcChXm9TLOmeZupkvvZo2g==}
+
+  '@fontsource/plus-jakarta-sans@5.2.8':
+    resolution: {integrity: sha512-P5qE49fqdeD+7DXH1KBxmMPlB17LTz1zvBhFH0tFzfnYTKVJVyb0pR6plh0ZGXxcB+Oayb54FZZw3V42/DawTw==}
 
   '@fontsource/pt-sans@5.2.8':
     resolution: {integrity: sha512-b8nBGHMVwfe21IWqERlMrzIs+L/Vm3QNGbnET3H1vfclAScWExbN17N/z/dJcyPgvrcenbJDv1H3f5hTAEbcVQ==}
@@ -627,6 +717,12 @@ packages:
 
   '@fontsource/source-serif-pro@5.2.5':
     resolution: {integrity: sha512-MTsjMrl2+81dar37wV1taDYzU+o9ArcuBVBkXRNb6JuNCBmrKOIAAmI1wC3cE+Q0eAlgXlfNrvZ7swP3l2M8tQ==}
+
+  '@fontsource/space-grotesk@5.2.10':
+    resolution: {integrity: sha512-XNXEbT74OIITPqw2H6HXwPDp85fy43uxfBwFR5PU+9sLnjuLj12KlhVM9nZVN6q6dlKjkuN8JisW/OBxwxgUew==}
+
+  '@fontsource/space-mono@5.2.9':
+    resolution: {integrity: sha512-b61faFOHEISQ/pD25G+cfGY9o/WW6lRv6hBQQfpWvEJ4y1V+S4gmth95EVyBE2VL3qDYHeVQ8nBzrplzdXTDDg==}
 
   '@fontsource/work-sans@5.2.8':
     resolution: {integrity: sha512-6LaHjVVgts+rnrcqvEkP2+iUB/jw1oDSYsGO0+TltAhnWki9Hnf/UGpgMQh2jcm0GEH8VqCPnq4PpmHLFzxXtQ==}
@@ -3392,13 +3488,31 @@ snapshots:
 
   '@fontsource/arvo@5.2.7': {}
 
+  '@fontsource/atkinson-hyperlegible@5.2.8': {}
+
+  '@fontsource/bodoni-moda@5.2.7': {}
+
   '@fontsource/caveat-brush@5.2.8': {}
 
   '@fontsource/crimson-pro@5.2.8': {}
 
   '@fontsource/crimson-text@5.2.7': {}
 
+  '@fontsource/dm-sans@5.2.8': {}
+
+  '@fontsource/dm-serif-display@5.2.8': {}
+
+  '@fontsource/epilogue@5.2.8': {}
+
+  '@fontsource/figtree@5.2.10': {}
+
   '@fontsource/fira-sans@5.2.7': {}
+
+  '@fontsource/fraunces@5.2.9': {}
+
+  '@fontsource/instrument-sans@5.2.8': {}
+
+  '@fontsource/instrument-serif@5.2.8': {}
 
   '@fontsource/inter@5.2.8': {}
 
@@ -3408,15 +3522,25 @@ snapshots:
 
   '@fontsource/libre-baskerville@5.2.10': {}
 
+  '@fontsource/literata@5.2.8': {}
+
+  '@fontsource/manrope@5.2.8': {}
+
   '@fontsource/merriweather-sans@5.2.7': {}
 
   '@fontsource/merriweather@5.2.11': {}
 
   '@fontsource/montserrat@5.2.8': {}
 
+  '@fontsource/newsreader@5.2.10': {}
+
   '@fontsource/oswald@5.2.8': {}
 
+  '@fontsource/outfit@5.2.8': {}
+
   '@fontsource/playfair-display@5.2.8': {}
+
+  '@fontsource/plus-jakarta-sans@5.2.8': {}
 
   '@fontsource/pt-sans@5.2.8': {}
 
@@ -3433,6 +3557,10 @@ snapshots:
   '@fontsource/source-serif-4@5.2.9': {}
 
   '@fontsource/source-serif-pro@5.2.5': {}
+
+  '@fontsource/space-grotesk@5.2.10': {}
+
+  '@fontsource/space-mono@5.2.9': {}
 
   '@fontsource/work-sans@5.2.8': {}
 

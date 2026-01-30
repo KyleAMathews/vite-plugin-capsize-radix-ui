@@ -124,6 +124,17 @@ function TypographyShowcase() {
               { name: `Lato`, file: `/lato.css` },
               { name: `Oswald/PT Sans`, file: `/ptsans.css` },
               { name: `Merriweather`, file: `/merriweather.css` },
+              // Modern fonts (2015-2025)
+              { name: `Instrument Serif/Sans`, file: `/instrument.css` },
+              { name: `DM Serif Display/DM Sans`, file: `/dm-serif.css` },
+              { name: `Fraunces/Epilogue`, file: `/fraunces.css` },
+              { name: `Plus Jakarta Sans`, file: `/plus-jakarta.css` },
+              { name: `Space Grotesk`, file: `/space-grotesk.css` },
+              { name: `Newsreader/Figtree`, file: `/newsreader.css` },
+              { name: `Bodoni Moda/Outfit`, file: `/bodoni.css` },
+              { name: `Manrope`, file: `/manrope.css` },
+              { name: `Atkinson Hyperlegible`, file: `/atkinson.css` },
+              { name: `Literata`, file: `/literata.css` },
             ]}
           />
         </Flex>
