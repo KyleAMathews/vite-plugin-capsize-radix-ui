@@ -17,6 +17,31 @@ This plugin:
 - Supports separate fonts for body text, headings, and code
 - Handles responsive sizing (mobile vs desktop)
 
+## Important: Spacing with Capsize
+
+Because Capsize trims the invisible whitespace above and below text, **adjacent text elements will sit directly against each other** without any natural spacing. This is by design - it gives you precise control over layout.
+
+You must explicitly add spacing between text elements using:
+- **Flex with gap** (recommended): `<Flex direction="column" gap="2">`
+- **margin/padding**: Apply to individual elements
+- **Radix spacing props**: `mt`, `mb`, `my`, etc.
+
+```tsx
+// Without gap - heading and text will touch
+<Flex direction="column">
+  <Heading>Recipes</Heading>
+  <Text>Define your chocolate recipes...</Text>
+</Flex>
+
+// With gap - natural spacing between elements
+<Flex direction="column" gap="2">
+  <Heading>Recipes</Heading>
+  <Text>Define your chocolate recipes...</Text>
+</Flex>
+```
+
+This explicit spacing model is more predictable than relying on font metrics and gives you pixel-perfect control over your layouts.
+
 ## Installation
 
 ```bash
