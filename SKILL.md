@@ -42,6 +42,20 @@ You must explicitly add spacing between text elements using:
 
 This explicit spacing model is more predictable than relying on font metrics and gives you pixel-perfect control over your layouts.
 
+## Preserving Descenders
+
+Capsize trims text to the cap-height (top) and alphabetic baseline (bottom). This can clip descenders (the tails of letters like "g", "y", "p") on large headings with tight line-heights.
+
+Add the `preserve-descenders` class to keep descenders visible:
+
+```tsx
+<Heading size="9" className="preserve-descenders">
+  Signal Sky
+</Heading>
+```
+
+This disables the bottom trim while keeping the top tight. Use this on large display headings where you notice descender clipping.
+
 ## Installation
 
 ```bash

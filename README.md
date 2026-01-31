@@ -119,6 +119,20 @@ You must explicitly add spacing between text elements using `<Flex gap>`:
 
 <img width="669" alt="Screenshot 2024-03-28 at 10 44 10 AM" src="https://github.com/KyleAMathews/vite-plugin-capsize-radix-ui/assets/71047/b8552d58-4e2d-42d6-9b7b-a595466c2725">
 
+### Preserving Descenders
+
+Capsize trims text to the cap-height (top) and alphabetic baseline (bottom). This can clip descenders (the tails of letters like "g", "y", "p") on large headings with tight line-heights.
+
+Add the `preserve-descenders` class to keep descenders visible:
+
+```tsx
+<Heading size="9" className="preserve-descenders">
+  Signal Sky
+</Heading>
+```
+
+This disables the bottom trim while keeping the top tight.
+
 ### Fallback fonts
 
 Another great freebie Capsize gives you is it automatically generates CSS for
